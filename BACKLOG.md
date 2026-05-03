@@ -222,14 +222,26 @@
 
 > 来源：[`techniques/geo-demand-side-fitness-cn.md`](./techniques/geo-demand-side-fitness-cn.md) 第 IX 节衍生 BACKLOG 建议 + [`docs/meeting-2026-05-03-geo-demand-and-business-model.md`](./docs/meeting-2026-05-03-geo-demand-and-business-model.md) 第 8 节行动项。
 
-- [ ] **`tech-cn-geo-business-model-taxonomy`** —— GEO 商业模式七层分类卡（数据层 / SaaS 层 / 内容层 / 服务咨询层 / 平台层 / 反向防御层 / 标准协议层）。每层标"已有玩家 + 合理性 + 强假说"。来源：本次会议纪要第 4 节。**优先级仅次于需求侧卡**——是仓库从信号侧研究跨入"需求 + 信号 + 模式"三轴的第二块拼图。
+- [x] **`tech-cn-geo-business-model-taxonomy`** —— GEO 商业模式七层分类卡 ✅ 完成于 2026-05-03：[`techniques/geo-business-model-taxonomy-cn.md`](./techniques/geo-business-model-taxonomy-cn.md)（**仓库第一张供给侧卡 / DS 维度**，七层 × 6 维度 + 投入产出结构 + 平台原生功能取代风险三个独立切片 + 6 条元假说 + 2 个实验设计 + 衍生 BACKLOG 8 条）
 - [ ] **`tech-cn-geo-source-pool-density`** —— 信源池占有率密度卡（探词们的真实护城河，仓库当前结构空白）。讨论"在多少家被收录的站上铺多少量才能影响 LLM"的密度问题。是 [`private-vs-public-source-cn.md`](./techniques/private-vs-public-source-cn.md) 的供给量级补充。
 - [ ] **`tech-cn-llm-vs-traditional-search-decision-funnel`** —— LLM 与小红书 / 淘宝 / 抖音 / 美团 / 朋友推荐的决策漏斗位置对比卡。无需新数据，可基于现有公开报告 + 仓库元假说衍生。
 - [ ] **`tech-cn-ymyl-llm-trust-temporal`** —— YMYL 场景 LLM 信任度纵向跟踪卡（健康 / 法律 / 财务用户警惕度可能波动，需要周期数据）。
 - [ ] **`tech-cn-geo-target-segment-by-industry`** —— 按行业的 GEO 目标客户分层卡（与需求侧卡 2.3 节衔接，为各 GEO 商业模式提供"哪个行业的什么角色是真买家"的清单）。
-- [ ] **`update-dimension-map-add-d0-demand-side`** —— 把 [`dimension-map-cn.md`](./techniques/dimension-map-cn.md) 的 8 维度结构更新为 **D0（需求侧前置）+ D1-D8（信号侧）**，把需求侧卡纳入图谱。这是仓库结构演进必走的一步。
+- [ ] **`update-dimension-map-three-axis`** —— 把 [`dimension-map-cn.md`](./techniques/dimension-map-cn.md) 的 8 维度结构升级为 **D0（需求侧前置）+ D1-D8（信号侧）+ DS（供给侧 / 商业模式侧）** 的三轴结构，把需求侧卡 + 商业模式分类卡纳入图谱。这是仓库结构演进必走的一步。
 - [ ] **`tech-cn-7w-media-channel-classification`** —— 把"7 万+ 媒体发布渠道"按"百度收录站 / 公众号 / 知乎 / 小红书 / B 站 / 自建网站"分类，作为 [`private-vs-public-source-cn.md`](./techniques/private-vs-public-source-cn.md) 的具体落地补充。来源：探词手册 p13。
 - [ ] **`exp-cn-source-flooding-ab-vs-citation-rate`** —— A/B 实验：同 query 同时间段，监测铺量前 vs 铺量后 4 周引用差异。**采购一次 RaaS 服务**作为实验输入。资金依赖（≥ ¥1 万）+ 流程合规依赖。
+
+### 接续供给侧卡的衍生（priority: medium-high）
+
+> 来源：[`techniques/geo-business-model-taxonomy-cn.md`](./techniques/geo-business-model-taxonomy-cn.md) 第 IX 节衍生 BACKLOG 建议。
+
+- [ ] **`exp-cn-llm-platform-ad-slot-monitor`** —— ⭐⭐⭐ 6 大平台广告位上线监控（豆包 / 元宝 / 千问 / 文心 / Kimi / 小红书问一问）。验证供给侧元假说 A：LLM 平台一旦自建广告位，c/d 层中介模式整体被腰斩。可与 [`tools/exp-doubao-vs-deepseek-paired/`](./tools/exp-doubao-vs-deepseek-paired/) 监测系统集成扩展。低成本（自建爬虫即可）。
+- [ ] **`exp-cn-geo-vendor-revenue-structure`** —— ⭐⭐ 5 家 GEO 公司收入构成反推（看融资 PR / 招聘 JD / 案例文章 / 媒体访谈）。验证元假说 B：多数所谓 SaaS 实际主收入仍是 RaaS。人力 ≈ 8-15 小时（全公开信息）。
+- [ ] **`tech-cn-anti-geo-monitoring`** —— ⭐⭐⭐ 反 GEO 监测专题卡（元假说 C 强反话术）。潜在客户访谈 ≥ 10 家上市公司公关 / 法务总监 + 需求规模评估。是仓库识别出的最有结构性价值的空白赛道之一。
+- [ ] **`tech-cn-geo-training-certification-landscape`** —— 培训认证赛道现有玩家盘点 + 入场门槛分析（元假说 E 合法暴利）。SEO 行业类比 + 1-3 年市场扩张预期。
+- [ ] **`tech-cn-llms-txt-chinese-promoter-watch`** —— 中文 llms.txt / AI provenance 推动方监测（元假说 D 长期最高 ROI 位置）。当前空白本身可能就是机会。
+- [ ] **`tech-cn-vertical-vs-generic-geo-survival-tracker`** —— 垂直陪跑 vs 通用 GEO 公司存活率纵向跟踪（元假说 F）。需 3-5 年观察。
+- [ ] **`tech-cn-vendor-pitch-pattern-library`** —— 多份 GEO 服务商话术对比库（基于 case-studies 积累 ≥ 3 份后启动；当前仅探词 1 份）。
 
 ---
 

@@ -46,11 +46,12 @@
 - [`case-studies/wordtrace-vendor-pitch-decon-2026-05.md`](./case-studies/wordtrace-vendor-pitch-decon-2026-05.md) —— **GEO 服务商话术样本 #1** 拆解卡：12 条核心量化主张 × F/P/N 可证伪性分级 + 与仓库 14 张技术卡反话术对照 + 5 份"案例截图"复测可行性评估 + 3 条 micro-pilot 衍生进 BACKLOG。是仓库"反 GEO 服务商话术"基调的第一张实操卡。
 - 衍生 BACKLOG 新小节"服务商话术验证 micro-pilot"3 条：[`exp-cn-vendor-pitch-self-reference-wordtrace`](./BACKLOG.md)（⭐⭐⭐ 与 selector pilot 兼容） / [`exp-cn-vendor-pitch-baiyun-tool-recommendation`](./BACKLOG.md) / [`exp-cn-vendor-pitch-yuanrun-pinot-noir`](./BACKLOG.md)
 
-### 7.6 需求侧维度首张技术卡 + 讨论纪要（新增 2026-05-03）✅
+### 7.6 需求侧 + 供给侧两张新维度卡 + 讨论纪要（新增 2026-05-03）✅
 
 - [`docs/meeting-2026-05-03-geo-demand-and-business-model.md`](./docs/meeting-2026-05-03-geo-demand-and-business-model.md) —— 会议纪要：探词业务技术反向工程 + 商业模式反推 + GEO 需求侧拆解 + 七层商业模式扫描 + 探词合理性 / 缺陷 / 结构性风险 + 7 个值得探索方向。
 - [`techniques/geo-demand-side-fitness-cn.md`](./techniques/geo-demand-side-fitness-cn.md) —— **仓库第一张需求侧卡**（D0 需求侧前置维度，前置于 dimension-map-cn 现有 8 维度）：用户层 / 场景层 / 决策路径位置层三层拆解 + 用户类型 × 问题类型矩阵识别 GEO 真有效的 4 类窄场景 + 5 条元假说（含 ⭐⭐⭐ 强反话术 C "服务商客户画像越宽越说明销售在勉强匹配市场"）+ 2 个实验设计（E1 ⭐⭐⭐ 决策路径调研 / E2 ⭐⭐ B2B 选型 LLM 渗透率，均资金依赖）+ 衍生 BACKLOG 7 条。
-- 仓库结构演进：14+1 → **15+1** 张技术卡（14 信号侧 + 1 元卡 + **新增 1 张需求侧前置卡**）。后续要写 [`techniques/geo-business-model-taxonomy-cn.md`](./techniques/geo-business-model-taxonomy-cn.md)（七层商业模式分类）+ [`techniques/geo-source-pool-density-cn.md`](./techniques/geo-source-pool-density-cn.md)（信源池占有率密度卡）。
+- [`techniques/geo-business-model-taxonomy-cn.md`](./techniques/geo-business-model-taxonomy-cn.md) —— **仓库第一张供给侧卡**（DS 供给侧维度）：七层商业模式分类（数据 / 工具 / 内容 / 服务 / 平台 / 防御 / 标准）× 6 维度 + 投入产出结构 + 平台原生功能取代风险三个独立切片 + 6 条元假说（含 ⭐⭐⭐ 强反话术 A "LLM 平台一旦自建广告位 c/d 层中介模式整体被腰斩" 和 ⭐⭐⭐ C "反 GEO 监测是被严重低估的对称赛道"）+ 2 个实验设计（E1 ⭐⭐⭐ 平台广告位监控 / E2 ⭐⭐ 收入构成反推）+ 与服务商自我定位话术对照 + 衍生 BACKLOG 8 条。
+- 仓库结构演进：14+1 → **16+1** 张技术卡（14 信号侧 + 1 元卡 + **新增 1 张需求侧前置卡 D0 + 1 张供给侧卡 DS**）。两卡 + [`geo-roi-framework-cn.md`](./techniques/geo-roi-framework-cn.md) 形成 **"需求 + 信号 + 模式 + ROI"** 四轴完整研究地图。后续 [`techniques/geo-source-pool-density-cn.md`](./techniques/geo-source-pool-density-cn.md)（信源池占有率密度卡）+ [`update-dimension-map-three-axis`](./BACKLOG.md)（dimension-map 升级为 D0 + D1-D8 + DS 三轴结构）。
 
 ### 7. 项目级文档 ✅
 - [`README.md`](./README.md) — 已更新到 2026-05-02 现状（14+1 张技术卡 / 8 维度 / 68 元假说 + dimension-map 入口指引 + 仓库特色"怀疑锚点 + 元假说 + 反话术对照"段）
@@ -147,9 +148,9 @@
 
 ## 文件总数
 
-70 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +4：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要）
+71 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +5：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要 + **供给侧首张技术卡**）
 
 ```
 $ find . -type f \( -name "*.md" -o -name "*.py" -o -name "*.yaml" -o -name "*.txt" \) | grep -v __pycache__ | wc -l
-70
+71
 ```
