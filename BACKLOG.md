@@ -237,7 +237,19 @@
 
 - [ ] **`exp-cn-llm-platform-ad-slot-monitor`** —— ⭐⭐⭐ 6 大平台广告位上线监控（豆包 / 元宝 / 千问 / 文心 / Kimi / 小红书问一问）。验证供给侧元假说 A：LLM 平台一旦自建广告位，c/d 层中介模式整体被腰斩。可与 [`tools/exp-doubao-vs-deepseek-paired/`](./tools/exp-doubao-vs-deepseek-paired/) 监测系统集成扩展。低成本（自建爬虫即可）。
 - [ ] **`exp-cn-geo-vendor-revenue-structure`** —— ⭐⭐ 5 家 GEO 公司收入构成反推（看融资 PR / 招聘 JD / 案例文章 / 媒体访谈）。验证元假说 B：多数所谓 SaaS 实际主收入仍是 RaaS。人力 ≈ 8-15 小时（全公开信息）。
-- [ ] **`tech-cn-anti-geo-monitoring`** —— ⭐⭐⭐ 反 GEO 监测专题卡（元假说 C 强反话术）。潜在客户访谈 ≥ 10 家上市公司公关 / 法务总监 + 需求规模评估。是仓库识别出的最有结构性价值的空白赛道之一。
+- [x] **`tech-cn-anti-geo-monitoring`** —— ⭐⭐⭐ 反 GEO 监测专题卡 ✅ 完成于 2026-05-03：[`techniques/anti-geo-monitoring-cn.md`](./techniques/anti-geo-monitoring-cn.md)（**DS 元假说 C 具体展开 / DS 维度首张子卡**，386 行，4 类需求拆解 + 客户决策人/预算/心理对照 + 与传统舆情监测技术差异 + 各 LLM 平台监测难度 + 7 条元假说 + 3 个实验设计 + 衍生 BACKLOG 7 条）
+
+### 接续反 GEO 监测卡的衍生（priority: medium-high）
+
+> 来源：[`techniques/anti-geo-monitoring-cn.md`](./techniques/anti-geo-monitoring-cn.md) 第 IX 节衍生 BACKLOG 建议。
+
+- [ ] **`exp-cn-anti-geo-buyer-interview`** —— ⭐⭐⭐ E1 上市公司公关 / 法务 / 舆情监测总监访谈（≥ 10 家），半结构化覆盖：当前 AI 监测视野 / 已发生的 AI 幻觉/舆情扩散事件 / 预算分配 / 决策路径 / 付费意愿。验证元假说 A、B。预算 ¥0.5-3 万。
+- [ ] **`exp-cn-llm-hallucination-rate-ymyl-vs-non`** —— ⭐⭐ E2 YMYL（医疗/法律/金融）vs 非 YMYL 类 LLM 幻觉率对照（6 平台 × 100 query × 3 次重复 + 人工标注）。验证元假说 D 监管驱动假设。可与 [`tools/exp-doubao-vs-deepseek-paired/`](./tools/exp-doubao-vs-deepseek-paired/) 数据采集流程复用。
+- [ ] **`exp-cn-cross-llm-answer-consistency`** —— ⭐⭐ E3 跨 LLM 答案一致性指数测量（50 query × 6 平台 × 5 次 × Jaccard / 编辑距离 / NLI 三种指数）。验证元假说 E 跨 LLM 监测技术壁垒。
+- [ ] **`tech-cn-llm-platform-brand-console-watch`** —— LLM 平台是否上线"品牌方监测后台"监控（元假说 G）。可与 [`exp-cn-llm-platform-ad-slot-monitor`](./BACKLOG.md) 监测系统集成。
+- [ ] **`tech-cn-ai-hallucination-compliance-mapping`** —— AI 幻觉合规要求映射（《生成式人工智能服务管理办法》后续配套细则跟踪）；YMYL 行业被罚案例收集。
+- [ ] **`tech-cn-anti-geo-vendor-landscape`** —— 已有"伪反 GEO 监测" 厂商盘点（探词 + 蜂鸟 / 海纳 / 鹰眼 / 慧科 等传统舆情厂商对照）。
+- [ ] **`tech-cn-geo-vs-anti-geo-comparison`** —— 进攻型 vs 防御型 GEO 系统对比卡（DS 子卡积累 ≥ 3 张后启动）。
 - [ ] **`tech-cn-geo-training-certification-landscape`** —— 培训认证赛道现有玩家盘点 + 入场门槛分析（元假说 E 合法暴利）。SEO 行业类比 + 1-3 年市场扩张预期。
 - [ ] **`tech-cn-llms-txt-chinese-promoter-watch`** —— 中文 llms.txt / AI provenance 推动方监测（元假说 D 长期最高 ROI 位置）。当前空白本身可能就是机会。
 - [ ] **`tech-cn-vertical-vs-generic-geo-survival-tracker`** —— 垂直陪跑 vs 通用 GEO 公司存活率纵向跟踪（元假说 F）。需 3-5 年观察。
