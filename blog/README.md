@@ -13,12 +13,12 @@
 
 | # | 标题 | 主题 | 字数 | 对应仓库卡片 |
 |---|------|------|-----|------------|
-| [01](./01-vendor-pitch-deconstruction.md) | 拆一份 GEO 服务商产品手册 | 从样本入手，看 GEO 厂商的"数字游戏" | ~2200 | [`case-studies/wordtrace-vendor-pitch-decon-2026-05`](../case-studies/wordtrace-vendor-pitch-decon-2026-05.md) |
-| [02](./02-who-uses-llm-for-decisions.md) | 什么人、什么场景，真的用 LLM 找答案 | 把"AI 用户超 10 亿"拆成可寻址市场 | ~2300 | [`techniques/geo-demand-side-fitness-cn`](../techniques/geo-demand-side-fitness-cn.md) |
-| [03](./03-seven-ways-to-make-money.md) | GEO 公司怎么赚钱——七种生意模式 | 供给侧的七层结构 | ~2600 | [`techniques/geo-business-model-taxonomy-cn`](../techniques/geo-business-model-taxonomy-cn.md) |
-| [04](./04-platform-ad-slot-risk.md) | GEO 行业最大的单一风险：LLM 平台自己卖广告位 | 中介模式的天花板 | ~1900 | [`techniques/geo-business-model-taxonomy-cn`](../techniques/geo-business-model-taxonomy-cn.md) 元假说 A |
-| [05](./05-anti-geo-monitoring.md) | 被严重低估的另一个生意：反 GEO 监测 | 公关 / 法务侧的空白赛道 | ~2200 | [`techniques/anti-geo-monitoring-cn`](../techniques/anti-geo-monitoring-cn.md) |
-| [06](./06-should-you-do-geo.md) | 你公司要不要做 GEO——一份决策清单 | 综合前 5 篇的实操判断流程 | ~2000 | [`techniques/geo-roi-framework-cn`](../techniques/geo-roi-framework-cn.md) |
+| [01](./01-拆服务商手册.md) | 拆一份 GEO 服务商产品手册 | 从样本入手，看 GEO 厂商的"数字游戏" | ~2200 | [`case-studies/wordtrace-vendor-pitch-decon-2026-05`](../case-studies/wordtrace-vendor-pitch-decon-2026-05.md) |
+| [02](./02-谁用LLM找答案.md) | 什么人、什么场景，真的用 LLM 找答案 | 把"AI 用户超 10 亿"拆成可寻址市场 | ~2300 | [`techniques/geo-demand-side-fitness-cn`](../techniques/geo-demand-side-fitness-cn.md) |
+| [03](./03-七种生意模式.md) | GEO 公司怎么赚钱——七种生意模式 | 供给侧的七层结构 | ~2600 | [`techniques/geo-business-model-taxonomy-cn`](../techniques/geo-business-model-taxonomy-cn.md) |
+| [04](./04-平台广告位风险.md) | GEO 行业最大的单一风险：LLM 平台自己卖广告位 | 中介模式的天花板 | ~1900 | [`techniques/geo-business-model-taxonomy-cn`](../techniques/geo-business-model-taxonomy-cn.md) 元假说 A |
+| [05](./05-反GEO监测.md) | 被严重低估的另一个生意：反 GEO 监测 | 公关 / 法务侧的空白赛道 | ~2200 | [`techniques/anti-geo-monitoring-cn`](../techniques/anti-geo-monitoring-cn.md) |
+| [06](./06-要不要做GEO.md) | 你公司要不要做 GEO——一份决策清单 | 综合前 5 篇的实操判断流程 | ~2000 | [`techniques/geo-roi-framework-cn`](../techniques/geo-roi-framework-cn.md) |
 
 ## 阅读建议
 

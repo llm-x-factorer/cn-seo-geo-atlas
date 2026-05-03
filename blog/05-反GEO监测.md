@@ -159,5 +159,5 @@ YMYL 类的 AI 幻觉具有**直接合规风险**：
 - 中国《生成式人工智能服务管理办法》原文：[网信办公告](http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm)
 - 中文 LLM 引用归因形态分析（理解 LLM 答案体的特殊性）：[`techniques/citation-attribution-styles-cn.md`](../techniques/citation-attribution-styles-cn.md)
 
-上一篇：[GEO 行业最大的单一风险：LLM 平台自己卖广告位](./04-platform-ad-slot-risk.md)
-下一篇：[你公司要不要做 GEO——一份决策清单](./06-should-you-do-geo.md)
+上一篇：[GEO 行业最大的单一风险：LLM 平台自己卖广告位](./04-平台广告位风险.md)
+下一篇：[你公司要不要做 GEO——一份决策清单](./06-要不要做GEO.md)

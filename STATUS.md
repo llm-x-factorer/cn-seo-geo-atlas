@@ -64,12 +64,12 @@
 仓库新增 [`blog/`](./blog/) 目录，6 篇系列博客对外输出研究成果。要求：直白、不用隐喻、避免行业黑话。
 
 - [`blog/README.md`](./blog/README.md) —— 系列索引 + 收录原则 + 阅读建议（按读者类型分路径）
-- [`blog/01-vendor-pitch-deconstruction.md`](./blog/01-vendor-pitch-deconstruction.md) —— 拆一份 GEO 服务商产品手册（F/P/N 可证伪性框架）
-- [`blog/02-who-uses-llm-for-decisions.md`](./blog/02-who-uses-llm-for-decisions.md) —— 什么人、什么场景，真的用 LLM 找答案（GEO 真实可寻址市场拆解）
-- [`blog/03-seven-ways-to-make-money.md`](./blog/03-seven-ways-to-make-money.md) —— GEO 公司怎么赚钱（七种生意模式 + 客户价值 vs 模式合理性独立判断）
-- [`blog/04-platform-ad-slot-risk.md`](./blog/04-platform-ad-slot-risk.md) —— GEO 行业最大的单一风险：LLM 平台自己卖广告位（c/d 层中介模式生命周期）
-- [`blog/05-anti-geo-monitoring.md`](./blog/05-anti-geo-monitoring.md) —— 被严重低估的另一个生意：反 GEO 监测（公关 / 法务侧的空白赛道 + YMYL 监管驱动）
-- [`blog/06-should-you-do-geo.md`](./blog/06-should-you-do-geo.md) —— 你公司要不要做 GEO（四关决策清单 + 不做 GEO 的明确名单）
+- [`blog/01-拆服务商手册.md`](./blog/01-拆服务商手册.md) —— 拆一份 GEO 服务商产品手册（F/P/N 可证伪性框架）
+- [`blog/02-谁用LLM找答案.md`](./blog/02-谁用LLM找答案.md) —— 什么人、什么场景，真的用 LLM 找答案（GEO 真实可寻址市场拆解）
+- [`blog/03-七种生意模式.md`](./blog/03-七种生意模式.md) —— GEO 公司怎么赚钱（七种生意模式 + 客户价值 vs 模式合理性独立判断）
+- [`blog/04-平台广告位风险.md`](./blog/04-平台广告位风险.md) —— GEO 行业最大的单一风险：LLM 平台自己卖广告位（c/d 层中介模式生命周期）
+- [`blog/05-反GEO监测.md`](./blog/05-反GEO监测.md) —— 被严重低估的另一个生意：反 GEO 监测（公关 / 法务侧的空白赛道 + YMYL 监管驱动）
+- [`blog/06-要不要做GEO.md`](./blog/06-要不要做GEO.md) —— 你公司要不要做 GEO（四关决策清单 + 不做 GEO 的明确名单）
 
 合计 1059 行，约 14000 字。每篇末尾"延伸阅读"链接回仓库技术卡 / 案例 / docs。**仓库从研究资产首次跨入"对外可读内容输出"阶段**。
 
