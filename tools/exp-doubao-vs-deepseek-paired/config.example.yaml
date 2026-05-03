@@ -1,0 +1,52 @@
+# exp-doubao-vs-deepseek-paired 实验配置
+# 复制为 config.yaml 后修改
+
+experiment_id: exp-doubao-vs-deepseek-paired-v1
+
+# 数据目录（相对路径基于本目录）
+data_dir: ./data
+screenshots_subdir: screenshots
+
+# 采集参数
+repetitions: 5            # 每个 query 重复采集次数
+cooldown_seconds: 30      # 单次采集间隔（避免风控）
+timeout_seconds: 60       # 单次答案等待超时
+headless: false           # pilot 时建议 false
+
+# 浏览器参数
+viewport:
+  width: 1440
+  height: 900
+locale: zh-CN
+timezone: Asia/Shanghai
+
+# 实验环境记录（人工填写，会写入每条数据）
+geo_ip_province: ""       # 例 "Zhejiang"
+network_note: ""          # 网络环境说明
+
+# 联网搜索状态（如平台 UI 提供该开关）
+online_search:
+  doubao: true
+  deepseek: true
+
+# 平台 URL（如平台改变入口需要更新）
+platform_urls:
+  doubao: https://www.doubao.com/chat
+  deepseek: https://chat.deepseek.com
+
+# 时段窗口（用于 --time-window 模式分批跑）
+time_windows:
+  day1-am:
+    start: "10:00"
+    end: "12:00"
+  day1-pm:
+    start: "14:00"
+    end: "16:00"
+  day1-eve:
+    start: "19:00"
+    end: "21:00"
+  # day2 / day3 同上
+
+# 失败处理
+max_consecutive_failures: 5    # 连续失败 N 次自动暂停
+fail_log_path: ./data/failures.jsonl

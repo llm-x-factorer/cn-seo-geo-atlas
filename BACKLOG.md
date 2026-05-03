@@ -1,0 +1,238 @@
+# BACKLOG
+
+> **状态**：仓库尚未 push 到 GitHub。本文件作为**临时待办池**，待 push 后批量转为 GitHub issue（每个 `[ ]` 项 = 一个 issue），本文件退役为 issue 列表的索引页。
+>
+> **维护原则**：新待办先进这里。完成后留 `[x]` 一段时间（一周左右）再清。永远不在卡片正文里散落"待办"——卡片只承载知识，待办都汇集到这里。
+
+转 issue 时统一用 `gh issue create` + 模板 [`.github/ISSUE_TEMPLATE/research-task.md`](./.github/ISSUE_TEMPLATE/research-task.md)。
+
+---
+
+## 🧪 实验类（priority: high）
+
+### 豆包
+
+- [ ] **`exp-doubao-citation-source-distribution`** —— 在豆包 APP 端跑 N 类 query × M 次重复，统计引用源分布。验证"今日头条 60%+"等服务商口径。来源：[`platforms/doubao/overview.md`](./platforms/doubao/overview.md)、[`citation-mechanism.md`](./platforms/doubao/citation-mechanism.md) 假说一。
+- [ ] **`exp-doubao-app-vs-api-divergence`** —— 同 query 同时刻在豆包 APP 和 火山引擎 API 双端跑，对比信源结构。验证假说二。
+- [ ] **`exp-doubao-recency-window`** —— 受控发布同主题内容到不同字节系平台，测时效窗口。验证假说三。
+- [ ] **`exp-doubao-bytedance-ecosystem-bias`** —— 对比同主题内容在字节系 vs 非字节系平台发布后被引用率。验证元假说 B。
+
+### DeepSeek
+
+- [ ] **`exp-deepseek-citation-source-distribution`** —— 在 chat.deepseek.com 跑 query 集，统计引用源分布。验证"CSDN / 搜狐号 / 网易号 / 百科"假说。
+- [ ] **`exp-deepseek-csdn-bias-test`** —— 用对照内容（同主题 CSDN vs 知乎 vs 微信公众号）测 DeepSeek 偏好。
+- [ ] **`exp-deepseek-via-third-party-divergence`** —— 同 query 在官方 + 元宝 R1 模式 + 问小白 + 纳米 AI 跑，量化集成方影响（B 类研究边界）。
+- [ ] **`exp-deepseek-r1-vs-v-citation-difference`** —— R1 推理模式 vs V 系列通用模式的引用行为差异。
+
+### 配对实验（豆包 × DeepSeek，最高价值）
+
+- [x] **`exp-doubao-vs-deepseek-paired-queries`** —— 实验设计完成于 2026-05-01：[`exp-doubao-vs-deepseek-paired.md`](./experiments/exp-doubao-vs-deepseek-paired.md)
+  - [x] 采集脚本骨架完成于 2026-05-01：[`tools/exp-doubao-vs-deepseek-paired/`](./tools/exp-doubao-vs-deepseek-paired/)
+  - [ ] **selector pilot 验证**（豆包 / DeepSeek 实际 UI 跑 1-2 个 query 验证 selector，调整失败的）
+  - [ ] Pilot run（10 次采集，端到端验证脚本可用）
+  - [ ] 主实验执行（320 次采集 × 3 天）
+  - [ ] 数据评分 + 统计分析（脚本就绪，跑就行）
+  - [ ] 回写结果到豆包 / DeepSeek / Princeton 9 策略卡片
+
+### Princeton 9 策略对照
+
+- [ ] **`exp-princeton-1-cite-sources-cn`** —— 中文场景下"引用央媒 vs 引用同生态"对豆包 / DeepSeek 引用率的影响。
+- [ ] **`exp-princeton-3-statistics-addition-cn`** —— "加数据"在豆包 / 千问 / DeepSeek 的差异。
+- [ ] **`exp-princeton-meta-A-source-vs-style`** —— 信源信号 vs 文风信号的相对效应（元假说 A）。
+- [ ] **`exp-princeton-meta-C-multi-actor`** —— 多竞争方下的策略衰减（元假说 C），中文复现 C-SEO Bench。
+- [ ] **`exp-princeton-9-keyword-stuffing-cn`** —— 关键词堆砌在中文 LLM 是否依然反向（低优先级，预期与英文一致）。
+
+---
+
+## 🌐 平台调研类（priority: medium）
+
+### 生成式引擎
+
+- [x] **`platform-qianwen`** —— 千问 ✅ 完成于 2026-05-01：[`overview.md`](./platforms/qianwen/overview.md)、[`citation-mechanism.md`](./platforms/qianwen/citation-mechanism.md)
+  - [ ] **`platform-qianwen-changelog`** —— 千问平台规则变更年表
+  - [ ] **`platform-qianwen-commerce-geo`** —— 千问"AI 下单"路径下的电商 SKU 优化机制专题
+  - [ ] **`exp-qianwen-citation-source-distribution`** —— 千问 APP 引用源分布
+  - [ ] **`exp-qianwen-commerce-geo`** —— 电商类 query 在千问上的"AI 下单"路径
+  - [ ] **`exp-qianwen-app-vs-quark-vs-taobao-divergence`** —— 阿里多入口同模型差异
+  - [ ] **`exp-qwen-open-vs-qianwen-closed`** —— Qwen 开源版 vs 千问 APP 闭源版引用机制
+- [x] **`platform-yuanbao`** —— 腾讯元宝 ✅ 完成于 2026-05-01：[`overview.md`](./platforms/yuanbao/overview.md)、[`citation-mechanism.md`](./platforms/yuanbao/citation-mechanism.md)
+  - [ ] **`platform-yuanbao-changelog`** —— 元宝平台规则变更年表
+  - [ ] **`platform-yuanbao-wechat-ecosystem-geo`** —— 微信生态 GEO 专题（公众号 + 视频号 + 文档）
+  - [ ] **`exp-yuanbao-citation-source-distribution`** —— 元宝 APP 引用源分布
+  - [ ] **`exp-yuanbao-multi-model-routing`** —— 元宝多模型路由策略观察
+  - [ ] **`exp-yuanbao-wechat-mp-bias`** —— 微信公众号 vs 其他信源的相对权重
+  - [ ] **`exp-yuanbao-app-vs-wechat-embedded`** —— 元宝 APP vs 微信内嵌 AI 搜的引用对比
+
+#### 跨平台终极实验
+
+- [x] **`exp-five-vendor-paired-queries`** ⭐⭐ —— **五大厂配对实验**实验设计完成于 2026-05-02：[`exp-five-vendor-paired-queries.md`](./experiments/exp-five-vendor-paired-queries.md)（H1 生态偏好普遍性 + H2 DeepSeek 技术 + H3 千问电商；预注册阈值 20pp/20pp/30pp + 120 比较 Bonferroni 修正；800 次采集计划；状态 concept，依赖第一个实验先跑通）
+  - [ ] **`tools-five-vendor-adapters`** —— 在 [`tools/exp-doubao-vs-deepseek-paired/`](./tools/exp-doubao-vs-deepseek-paired/) 基础上新增 3 个 adapter（wenxin / qianwen / yuanbao）+ 扩展 source_classifier 加入 `alibaba-eco` 归类
+  - [ ] **`tools-source-classifier-backfill-alibaba`** —— 第一个实验跑完后，用扩展后的 source_classifier 重跑分类，把原 `other` 中实际属于 `alibaba-eco` 的样本回填，确保两个实验的数据可横向对比
+  - [ ] **`exp-five-vendor-selector-pilot`** —— 5 平台 selector pilot 验证（2 个继承自第一个实验，3 个新增）
+  - [ ] **`exp-five-vendor-pilot-run`** —— 10 query × 1 次 × 5 平台 = 50 次端到端 pilot
+  - [ ] **`exp-five-vendor-main-run`** —— 主实验执行（800 次采集 × 3 天）
+  - [ ] **`exp-five-vendor-analyze-and-writeback`** —— 数据评分 + 统计分析 + 回写到 5 平台 + Princeton 元假说 + README
+- [x] **`tech-private-vs-public-source-cn`** —— 中文私域 vs 公域信源光谱 ✅ 完成于 2026-05-02：[`techniques/private-vs-public-source-cn.md`](./techniques/private-vs-public-source-cn.md)（5 档公开度 L1-L5 + 各信源平台横向对照 + 训练 / RAG / 用户转述三条传导路径 + 5 条元假说 + 3 个实验设计；强假说 B：公众号矩阵仅在元宝 / 微信搜一搜成立；强假说 D：L4-L5 全私域是 0 信号基线）
+  - [ ] **`exp-cn-source-disclosure-tier-distribution`** —— 按档位归类信源后引用率分布（验证元假说 A，可从五大厂实验数据析出）
+  - [ ] **`exp-cn-mp-matrix-cross-llm`** —— 公众号矩阵跨 LLM 对照实验（验证元假说 B，⭐⭐⭐ 直接打脸服务商话术）
+  - [ ] **`exp-cn-xhs-l3-passive-observation`** —— 小红书 L3 注册可见信源传导路径观察实验（验证元假说 C）
+  - [x] **`tech-cn-platform-search-blockade`** —— 中文平台间相互封锁搜索的历史与现状 ✅ 完成于 2026-05-02：[`techniques/platform-search-blockade-cn.md`](./techniques/platform-search-blockade-cn.md)（封锁拆为 C1-C5 五类 + 2008-2026 关键节点时间线 + 当前状态矩阵 + 信源池子池切割 + 5 条元假说 + 3 个实验设计；强假说 A：中文 LLM 信源池 Jaccard < 50%；强假说 C：互联互通对 LLM 引用率影响接近 0）
+    - [ ] **`exp-cn-cross-llm-source-jaccard`** —— 跨 LLM 信源池 Jaccard 量化（验证元假说 A，可从五大厂数据析出）
+    - [ ] **`exp-cn-platform-domain-distribution`** —— 按平台域名分类的引用占比对照（验证元假说 B：通用 LLM 偏向 L1 残余 Web）
+    - [ ] **`tools-source-classifier-platform-tag`** —— [`tools/exp-doubao-vs-deepseek-paired/source_classifier.py`](./tools/exp-doubao-vs-deepseek-paired/source_classifier.py) 扩展加入平台来源 + 封锁状态标签
+    - [ ] **`tech-cn-anti-monopoly-and-geo-roadmap`** —— 反垄断 / 互联互通政策对 GEO 影响的时间线卡（持续更新）
+  - [ ] **`tech-cn-corporate-knowledge-geo`** —— 企业内部知识库 GEO 专题（公开度调整 + 选择性开放）
+  - [ ] **`tools-source-classifier-tier-tag`** —— [`tools/exp-doubao-vs-deepseek-paired/source_classifier.py`](./tools/exp-doubao-vs-deepseek-paired/source_classifier.py) 扩展加入 L1-L5 档位标签
+- [ ] **`platform-kimi`** —— Kimi（月之暗面）overview。早期长文本爆款，2025 后期份额被压；用户偏研究 / 学术。
+- [x] **`platform-wenxin`** —— 文心一言 / 文心助手 ✅ 完成于 2026-05-01：[`overview.md`](./platforms/wenxin/overview.md)、[`citation-mechanism.md`](./platforms/wenxin/citation-mechanism.md)
+  - [ ] **`platform-wenxin-changelog`** —— 文心 5.0 上线、AI 答案位演进等关键事件年表
+  - [ ] **`exp-wenxin-citation-source-distribution`** —— 文心助手 APP 的引用源分布
+  - [ ] **`exp-wenxin-vs-baidu-search-ai-divergence`** —— 文心助手 vs 百度搜索 AI 答案位的引用对比（同公司同模型不同入口）
+  - [ ] **`exp-wenxin-baijia-bias-test`** —— 百家号 vs 同质量第三方内容在文心中的相对权重
+  - [ ] **`exp-wenxin-ymyl-weighting`** —— YMYL 类 query 在文心 vs 豆包 / DeepSeek 上的引用源结构
+  - [ ] **`exp-wenxin-vs-doubao-vs-deepseek-paired`** ⭐ —— **三平台配对实验**，仓库第二个高价值实证目标，验证"中文 GEO 是否需要按平台分流"
+  - [ ] **`exp-wenxin-5-vs-4`** —— 文心 5.0 上线前后引用行为对照（如能跨过升级窗口）
+- [ ] **`platform-chatgpt-cn`** —— ChatGPT 在中文 query 下的行为研究。
+- [ ] **`platform-perplexity-cn`** —— Perplexity 在中文 query 下的行为研究。
+- [ ] **`platform-claude-cn`** —— Claude 在中文 query 下的行为研究。
+- [ ] **`platform-gemini-cn`** —— Gemini 在中文 query 下的行为研究。
+
+### 内容平台站内搜索
+
+- [x] **`platform-xiaohongshu`** —— 小红书站内搜索 + 推荐 ✅ 完成于 2026-05-01：[`overview.md`](./platforms/xiaohongshu/overview.md)、[`on-platform-search.md`](./platforms/xiaohongshu/on-platform-search.md)
+  - [ ] **`xhs-as-llm-source`** —— 子卡片：小红书作为外部 LLM 信源（路径：被豆包 / 千问 / Kimi 抓取的现状）
+  - [ ] **`xhs-changelog`** —— 平台规则变更年表，重点跟踪 2025 末算法部门整合的后续影响
+  - [ ] **`exp-xhs-search-ranking-factors-v2026`** —— 受控笔记 A/B 测试，量化 2026 算法各信号权重
+  - [ ] **`exp-xhs-search-vs-recommend-traffic`** —— 同笔记跟踪 30 天，搜索流量 vs 推荐流量贡献分布
+  - [ ] **`exp-xhs-as-llm-source-coverage`** —— 在豆包 / 千问 / Kimi 跑 N 个 query，统计小红书笔记被引用比例
+  - [ ] **`exp-xhs-diandian-vs-doubao`** —— "点点" vs 豆包跑同 query，对比引用结构（小红书自有 GEO 入口 vs 字节系生态）
+- [ ] **`platform-zhihu`** —— 知乎搜索 + 知乎直答 + 推荐
+- [ ] **`platform-weixin-sousou`** —— 微信搜一搜
+- [ ] **`platform-weixin-mp`** —— 微信公众号生态
+- [ ] **`platform-bilibili`** —— B 站搜索 + 推荐
+- [ ] **`platform-douyin`** —— 抖音搜索 + 推荐
+- [ ] **`platform-kuaishou`** —— 快手搜索 + 推荐
+- [ ] **`platform-weibo`** —— 微博搜索
+
+### 传统搜索
+
+- [x] **`platform-baidu`** —— 百度搜索 ✅ 完成于 2026-05-01：[`overview.md`](./platforms/baidu/overview.md)、[`seo-signals-and-ai-overview.md`](./platforms/baidu/seo-signals-and-ai-overview.md)
+  - [ ] **`platform-baidu-ecosystem`** —— 子卡片：百度生态详解（百家号 / 百度百科 / 百度知道 / 百度文库 / 百度健康）
+  - [ ] **`platform-baidu-changelog`** —— 平台规则变更年表（含算法规范的历史与"AI 答案位"演进）
+  - [ ] **`exp-baidu-ai-overview-coverage`** —— 跑 N 类 query，统计百度搜索 AI 答案位的出现率
+  - [ ] **`exp-baidu-baijia-vs-third-party`** —— 百家号 vs 第三方权威媒体在百度搜索 / 文心引用中的相对权重
+  - [ ] **`exp-baidu-vs-wenxin-citation-divergence`** —— 同 query 在百度搜索内嵌 AI 和文心助手中的引用源差异
+  - [ ] **`exp-baidu-tezing-ka-trigger-2026`** —— 特型卡触发的 query 类型映射（2026 版）
+  - [ ] **`exp-baidu-ai-vs-organic-ctr-cn`** —— 百度 AI 答案位对自然 CTR 的实际影响（中文场景对照中欧白皮书引用的 Google 数据）
+- [ ] **`platform-bing-cn`** —— 必应中文
+- [ ] **`platform-shenma`** —— 神马搜索
+- [ ] **`platform-sogou`** —— 搜狗搜索
+
+---
+
+## 🛠 跨平台技术主题（priority: medium）
+
+- [x] **`tech-structured-data-cn-practice`** —— 结构化数据中文实践 ✅ 完成于 2026-05-02：[`techniques/structured-data-cn-practice.md`](./techniques/structured-data-cn-practice.md)（Schema.org / JSON-LD / 微数据 / 百度自有规范 4 组关系 + 4 搜索引擎 × 6 LLM 支持矩阵 + Google 场景外推的 4 处失效 + 5 条元假说 + 3 个实验设计；强假说 B：schema 对中文 LLM 引用率边际效应接近 0）
+  - [ ] **`exp-cn-schema-vs-no-schema-llm`** —— schema A/B 对中文 LLM 引用率影响实验（验证元假说 B）
+  - [ ] **`exp-cn-baidu-native-vs-schema-org`** —— 百度自有规范 vs 通用 schema.org 效应对照（验证元假说 D）
+  - [ ] **`tech-cn-search-engine-schema-support-matrix`** —— 跨搜索引擎 schema 支持类型清单（事实层卡片，定期更新）
+- [x] **`tech-eeat-cn`** —— 中文 E-E-A-T 类比信号 ✅ 完成于 2026-05-02：[`techniques/eeat-cn.md`](./techniques/eeat-cn.md)（澄清两个误解 + 5 平台搜索引擎 + 6 平台 LLM 横向对照 + 5 条元假说 + 3 个实验设计建议）
+  - [x] **`tech-cn-account-grade-systems`** —— 中文"号"主体绑定 + 账号等级体系横向对照卡 ✅ 完成于 2026-05-02：[`techniques/account-grade-systems-cn.md`](./techniques/account-grade-systems-cn.md)（10+ 平台 L1/L2/L3 三层结构 + 5 条元假说 + 3 个实验设计建议；强假说 D：L3 数字等级对外部 LLM 引用几乎无效）
+    - [ ] **`glossary-add-account-grade-system`** —— glossary 新增 slug `account-grade-system`（走 PR）
+    - [ ] **`exp-cn-account-grade-jump`** —— 等级跃升前后引用率对照实验（验证元假说 D：L3 数字等级对 LLM 引用无效）
+    - [ ] **`exp-cn-cross-eco-matrix`** —— 跨生态号矩阵 vs 单号深耕对照实验（验证元假说 E：跨生态铺设是中文 GEO 真正硬信号）
+  - [ ] **`exp-cn-ymyl-cross-platform-citation`** —— YMYL 类跨平台引用对照实验（验证元假说 C：YMYL 类全平台趋同）
+  - [ ] **`exp-cn-account-cert-impact`** —— 认证号 vs 未认证号同质内容引用率对照实验（验证元假说 E）
+- [x] **`tech-llms-txt-cn-practice`** —— llms.txt 在中文场景的采纳现状 ✅ 完成于 2026-05-02：[`techniques/llms-txt-cn-practice.md`](./techniques/llms-txt-cn-practice.md)
+  - [ ] **`tech-cn-llm-crawler-ua-registry`** —— 中文 LLM 爬虫 UA / IP 段登记卡片（作为 llms.txt 卡片的事实补充）
+  - [ ] **`glossary-add-crawler-directive`** —— glossary 新增 slug `crawler-directive`（涵盖 robots.txt / llms.txt / ai.txt / sitemap.xml）
+  - [ ] **`exp-llms-txt-access-log-observation`** —— 实验 1：在受控中文站点部署 llms.txt 后做 30-60 天抓取日志被动观察
+  - [ ] **`exp-llms-txt-ab-citation-impact`** —— 实验 2：A/B 对照测部署 llms.txt 是否提升中文 LLM 引用率（套用 exp-doubao-vs-deepseek-paired 工具栈）
+  - [ ] **`exp-llms-txt-fingerprint-injection`** —— 实验 3：独特词指纹植入实验
+- [x] **`tech-knowledge-graph-cn`** —— 知识图谱与百科收录 ✅ 完成于 2026-05-02：[`techniques/knowledge-graph-cn.md`](./techniques/knowledge-graph-cn.md)（区分知识图谱与百科 + 6+ 大百科生态横向对照 + 训练 / RAG / KG 抽取三条传导路径 + 5 条元假说 + 3 个实验设计；强假说 E：维基中文"看得见够不着"，是 GEO 不可优化的硬基线）
+  - [ ] **`exp-cn-baike-cross-llm-citation`** —— 4 大百科 × 5 大 LLM 引用率对照实验（验证元假说 B + C）
+  - [ ] **`exp-cn-wiki-zh-fingerprint-passive`** —— 维基中文被动观察实验（验证元假说 A）
+  - [ ] **`exp-cn-baike-serp-vs-llm-divergence`** —— 百度百科 SERP 特型卡 vs LLM 引用率双因变量观察（验证元假说 D）
+  - [ ] **`tech-cn-vertical-wiki-and-domain-knowledge`** —— 垂类百科（萌娘 / MBA 智库 / 学术领域知识库等）横向对照
+- [x] **`tech-prompt-level-seo`** —— prompt-level SEO 中文场景适用性 ✅ 完成于 2026-05-02：[`techniques/prompt-level-seo-cn.md`](./techniques/prompt-level-seo-cn.md)（澄清"prompt-level SEO 实质是用户问法覆盖" + 中英 prompt 结构差异 + 各 LLM tokenizer 公开度对照 + 5 条元假说 + 3 个实验设计；强假说 E：tokenizer 优化是伪需求）
+  - [ ] **`exp-cn-faq-vs-keyword-density`** —— FAQ 多视角 vs 关键词高密度内容引用率对照（验证元假说 D，⭐⭐⭐ 最高）
+  - [ ] **`exp-cn-jaccard-of-cited-sources-cross-llm`** —— 跨 LLM 信源池 Jaccard 对照（验证元假说 A，可从五大厂实验数据析出）
+  - [ ] **`exp-cn-llm-query-rewrite-passive`** —— 被动观察 LLM query rewrite 行为（同 query 多次询问看答案差异）
+  - [ ] **`tech-cn-long-tail-keyword-vs-prompt-variants`** —— 传统长尾关键词挖掘 vs prompt-level 变体覆盖方法论对比
+- [x] **`tech-icp-and-subject`** —— 备案 / 主体认证对中文搜索 / LLM 可见性的影响 ✅ 完成于 2026-05-02：[`techniques/icp-and-subject-cn.md`](./techniques/icp-and-subject-cn.md)（拆 ICP / 行业资质 / 平台主体认证三套体系 + 因果链 5 段拆解 + 5 条元假说 + 3 个实验设计建议；强假说 C：算法备案与内容站 GEO 是类别错误）
+  - [ ] **`exp-cn-icp-vs-overseas`** —— 境内备案 vs 境外服务器 vs 境外 + canonical 对照实验（验证元假说 A + D）
+  - [ ] **`exp-cn-ymyl-license-impact`** —— YMYL 资质效应实验（可与 [`exp-cn-ymyl-cross-platform-citation`](#) 合并设计）
+  - [x] **`tech-overseas-cn-deployment`** —— 境外品牌进中文 GEO 的部署路径 ✅ 完成于 2026-05-02：[`techniques/overseas-cn-deployment.md`](./techniques/overseas-cn-deployment.md)（5 种部署路径 A-E 横向对照 + 主体侧 / 内容侧两个独立维度 + 行业差异矩阵 + 5 条元假说 + 3 个实验设计；强假说 A：完全境外路径可见性低于代理备案路径一个量级；强假说 D：70% 隐性成本在内容审查不在技术部署）
+    - [ ] **`exp-cn-overseas-path-a-vs-c-comparison`** —— 路径 A 完全境外 vs 路径 C 代理备案同品牌引用率对照（验证元假说 A）
+    - [ ] **`exp-cn-overseas-medium-brand-roi-case-study`** —— 中型出海品牌 C+E 组合 vs D 单独 ROI 案例研究（验证元假说 B）
+    - [ ] **`exp-cn-content-review-cost-quantification`** —— 出海品牌内容审查 + 合规适配成本量化（验证元假说 D）
+    - [ ] **`tech-cn-cross-border-payment-and-conversion`** —— 跨境品牌支付通道 + 转化漏斗在中文 GEO 中的特殊性
+    - [ ] **`tech-cn-foreign-licensed-isp-and-ymyl`** —— YMYL 类外资牌照获取的现状卡
+- [x] **`tech-multimodal-cn`** —— 多模态信源在中文 LLM 中的采纳 ✅ 完成于 2026-05-02：[`techniques/multimodal-cn.md`](./techniques/multimodal-cn.md)（拆 4 类多模态信源 + 输入能力 vs 召回能力两套维度 + 6 大 LLM 对照 + 5 条元假说 + 3 个实验设计；强假说 D：图里文字 > alt 标签是中文场景反直觉的实操结论；强假说 C：视频字幕是中文场景被 LLM 召回最多的多模态信号）
+  - [ ] **`glossary-add-multimodal`** —— glossary 新增 slug `multimodal`（走 PR）
+  - [ ] **`exp-cn-image-alt-vs-no-alt`** —— 图片 alt A/B 对照实验（验证元假说 B：alt 边际效应接近 0）
+  - [ ] **`exp-cn-content-format-comparison`** —— 同主题图文 vs 视频 vs 纯文本在生态内 vs 通用 LLM 引用率对照（验证元假说 A + C + E）
+  - [ ] **`exp-cn-text-in-image-vs-out`** —— 图里文字 vs 图外文字对照实验（验证反直觉元假说 D）
+  - [ ] **`tech-cn-asr-quality-divergence`** —— 中文 ASR 在不同视频平台的质量对照（事实层卡片）
+- [x] **`tech-citation-attribution-styles`** —— 引用归因机制对比 ✅ 完成于 2026-05-02：[`techniques/citation-attribution-styles-cn.md`](./techniques/citation-attribution-styles-cn.md)（4 维分解 + 6 大中文 LLM × 英文基线横向表 + 信号价值 vs 回流价值两层模型 + 5 条元假说 + 3 个实验设计；强假说 A：中文 LLM 引用源 CTR < 1%；强假说 E：被引用对无品牌内容方是零价值事件）
+  - [ ] **`exp-cn-llm-citation-source-ctr`** —— 中文 LLM 引用源 CTR 测量实验（验证元假说 A，**仓库商业价值最高实证**）
+  - [ ] **`exp-cn-content-form-vs-citation-style`** —— 内容形态触发引用形态对照实验（验证元假说 B）
+  - [ ] **`exp-cn-yuanbao-mp-soft-funnel`** —— 元宝公众号"软回流"路径观察实验（验证元假说 C）
+  - [x] **`tech-cn-geo-roi-framework`** —— 中文 GEO ROI 评估框架 ✅ 完成于 2026-05-02：[`techniques/geo-roi-framework-cn.md`](./techniques/geo-roi-framework-cn.md)（投入 3 类 / 产出 3 类拆解 + ROI 计算 3 类常见错误 + 按主体类型差异化 ROI（中小 / 中型 / 大型 / 出海 / YMYL）+ 按行业差异化 ROI + 投入优先级排序含"不建议"清单 + 5 条元假说 + 3 个实验设计；强假说 C：机会成本是最常被服务商隐藏的项；强假说 A：中小新品牌中文 GEO ROI 结构性低于英文场景）
+    - [ ] **`exp-cn-cross-language-roi-comparison`** —— 跨语言（中文 vs 英文）GEO ROI 对照（验证元假说 A）
+    - [ ] **`exp-cn-account-ban-asset-discount`** —— 账号封禁的资产折现率量化（验证元假说 B）
+    - [ ] **`exp-cn-equal-budget-channel-comparison`** —— 等预算 GEO vs 短视频带货对照（验证元假说 C，⭐⭐⭐ 仓库 GEO ROI 决定性实证）
+    - [ ] **`tech-cn-channel-mix-strategy`** —— 把 GEO 放在完整营销 mix（短视频 / 直播 / 私域 / 信息流 / 线下）中的位置评估
+- [x] **`tech-dimension-map-cn`** —— 技术主题卡片维度索引地图 ✅ 完成于 2026-05-02：[`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md)（元卡，14 张技术卡 × 8 维度图谱显式化 + 卡间关系图 + 强假说集 + 服务商话术索引 + 主体决策索引 + 空缺维度 + 4 类读者阅读路径 + 新卡扩展原则）
+
+---
+
+## 🔧 工具评测占位（priority: low）
+
+国内 GEO 服务商 / 监测工具，先建 stub 卡片（标 `verified: false`），等实测后填充：
+
+- [ ] **`tool-chuanshenggang-geo`** —— 传声港 GEO（多个 GEO 服务商榜单中常见）
+- [ ] **`tool-chuanxinshe`** —— 传新社
+- [ ] **`tool-guaishou-geo`** —— 怪兽智能 GEO
+- [ ] **`tool-sheepgeo`** —— SheepGeo（国内 GEO 监测工具）
+- [ ] **`tool-foglift`** —— Foglift（含 MCP server）
+- [ ] **`tool-otterly-cn-test`** —— Otterly.AI 在国内平台支持度评测
+- [ ] **`tool-profound-cn-test`** —— Profound 在国内平台支持度评测
+- [ ] **`tool-geo-aeo-tracker`** —— danishashko/geo-aeo-tracker 自部署评测
+- [ ] **`tool-auriti-geo-optimizer`** —— Auriti-Labs/geo-optimizer-skill 评测
+- [ ] **`tool-onvoyage-skills`** —— onvoyage-ai/gtm-engineer-skills 评测
+
+---
+
+## 📚 资源 / 文档完善（priority: low）
+
+- [ ] **`docs-doubao-changelog`** —— 创建 [`platforms/doubao/changelog.md`](./platforms/doubao/changelog.md)，追踪豆包平台规则 / 功能变更
+- [ ] **`docs-deepseek-changelog`** —— DeepSeek changelog
+- [ ] **`docs-resources-people`** —— [`resources/people.md`](./resources/people.md) 创建，追踪值得关注的中文 GEO/SEO 从业者
+- [ ] **`docs-resources-official-docs`** —— [`resources/official-docs.md`](./resources/official-docs.md) 创建，整合各平台官方文档链接索引
+- [ ] **`docs-resources-courses`** —— [`resources/courses.md`](./resources/courses.md) 国内付费 GEO 课程评测（披露利益关系）
+- [ ] **`docs-glossary-update-cycle`** —— glossary 维护节奏（每季度回看）
+
+---
+
+## 🔬 元问题 / 方法学（priority: medium）
+
+- [ ] **`meta-experiment-tooling`** —— 选定实验执行的工具栈：手动 / Playwright / 抓包脚本 / 第三方监测工具的取舍
+- [ ] **`meta-data-storage`** —— 实验原始数据存放策略（gist / 仓库内 / 外部 S3 + 校验和）
+- [ ] **`meta-confidence-calibration`** —— 跨条目的 `confidence` 评级标准是否需要统一定义、量化
+- [ ] **`meta-platform-changelog-pipeline`** —— 各平台 changelog 的采集机制（人工 vs 自动）
+
+---
+
+## 转 issue 时的 label 建议
+
+| BACKLOG 分类 | 建议 GitHub label |
+|--------------|--------------------|
+| 实验 | `experiment`, 关联平台 label（`platform:doubao` 等） |
+| 平台调研 | `platform`, 关联 slug |
+| 技术主题 | `technique`, 关联标签 slug |
+| 工具评测 | `tool-review` |
+| 资源 / 文档 | `docs` |
+| 元问题 | `meta` |
+
+优先级：`priority:high` / `priority:medium` / `priority:low`。

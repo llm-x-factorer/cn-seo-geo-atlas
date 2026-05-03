@@ -1,0 +1,136 @@
+# 32 个实验 query，从 query-set-v1 抽取
+# 4 类型 × 8 query
+# 修改 query 集时同步更新 experiments/query-set-v1.md
+
+queries:
+  # 决策类（8 个）
+  - id: dec-01
+    type: decisional
+    text: "iPhone 和华为哪个更值得买"
+
+  - id: dec-02
+    type: decisional
+    text: "适合学生的笔记本电脑推荐"
+
+  - id: dec-03
+    type: decisional
+    text: "哪款扫地机器人性价比高"
+
+  - id: dec-05
+    type: decisional
+    text: "想买跑鞋有什么推荐"
+
+  - id: dec-06
+    type: decisional
+    text: "学英语用哪个 APP 比较好"
+
+  - id: dec-08
+    type: decisional
+    text: "适合敏感肌的面霜推荐"
+
+  - id: dec-09
+    type: decisional
+    text: "性价比高的中型 SUV 有哪些"
+
+  - id: dec-10
+    type: decisional
+    text: "适合长跑的轻量缓震跑鞋"
+
+  # 知识类（8 个）
+  - id: know-01
+    type: factual
+    text: "什么是量子计算"
+
+  - id: know-02
+    type: factual
+    text: "黑洞是怎么形成的"
+
+  - id: know-03
+    type: factual
+    text: "王安石变法的主要内容"
+
+  - id: know-05
+    type: factual
+    text: "什么是 RAG（检索增强生成）"
+
+  - id: know-06
+    type: factual
+    text: "解释一下相对论"
+
+  - id: know-07
+    type: factual
+    text: "DNA 双螺旋结构是谁发现的"
+
+  - id: know-09
+    type: factual
+    text: "区块链的基本原理是什么"
+
+  - id: know-10
+    type: factual
+    text: "介绍一下中国的二十四节气"
+
+  # 技术类（8 个，重点验证 H2）
+  - id: tech-01
+    type: technical
+    text: "如何在 Python 里实现一个 LRU 缓存"
+
+  - id: tech-02
+    type: technical
+    text: "解释一下 React 的虚拟 DOM 机制"
+
+  - id: tech-03
+    type: technical
+    text: "Kubernetes 的 Pod 和 Container 有什么区别"
+
+  - id: tech-05
+    type: technical
+    text: "TCP 三次握手过程详解"
+
+  - id: tech-06
+    type: technical
+    text: "如何使用 Docker 部署 PostgreSQL"
+
+  - id: tech-07
+    type: technical
+    text: "RAG 的基本架构是怎样的"
+
+  - id: tech-08
+    type: technical
+    text: "解释一下事件循环（Event Loop）"
+
+  - id: tech-09
+    type: technical
+    text: "MySQL 索引失效的常见原因"
+
+  # 资讯类（8 个，对照基线）
+  - id: info-01
+    type: informational
+    text: "今天有什么重大新闻"
+
+  - id: info-03
+    type: informational
+    text: "最近半年人工智能行业有什么大事件"
+
+  - id: info-05
+    type: informational
+    text: "A 股最近有什么新政策"
+
+  - id: info-06
+    type: informational
+    text: "苹果今年发布会的主要新品"
+
+  - id: info-07
+    type: informational
+    text: "最近哪部电影口碑好"
+
+  - id: info-08
+    type: informational
+    text: "今年 NBA 总决赛冠军是谁"
+
+  - id: info-09
+    type: informational
+    text: "最新的微信版本有什么新功能"
+
+  - id: info-10
+    type: informational
+    text: "这个月的热门话题有哪些"

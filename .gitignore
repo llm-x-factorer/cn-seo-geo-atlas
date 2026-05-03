@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+env/
+ENV/
+
+# 实验数据（不入库）
+tools/*/data/
+tools/*/config.yaml
+!tools/*/config.example.yaml
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# 运行时
+*.log
+playwright-report/
+test-results/
