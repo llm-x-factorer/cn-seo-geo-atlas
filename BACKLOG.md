@@ -1,10 +1,25 @@
 # BACKLOG
 
-> **状态**：仓库尚未 push 到 GitHub。本文件作为**临时待办池**，待 push 后批量转为 GitHub issue（每个 `[ ]` 项 = 一个 issue），本文件退役为 issue 列表的索引页。
+> **状态**：仓库已 push 到 GitHub（[LLM-X-Factorer/cn-seo-geo-atlas](https://github.com/LLM-X-Factorer/cn-seo-geo-atlas)，2026-05-03）。**转 issue 工作进行中**——按"高优先级 + 高复用价值"分批转，本文件继续作为待办池，已转 issue 的条目末尾追加 issue 编号引用，退役计划在所有 high 优先级条目转完后启动。
 >
 > **维护原则**：新待办先进这里。完成后留 `[x]` 一段时间（一周左右）再清。永远不在卡片正文里散落"待办"——卡片只承载知识，待办都汇集到这里。
 
 转 issue 时统一用 `gh issue create` + 模板 [`.github/ISSUE_TEMPLATE/research-task.md`](./.github/ISSUE_TEMPLATE/research-task.md)。
+
+## 已转 GitHub issue（首批 10 条，2026-05-03）
+
+| # | 标题 | 来源 BACKLOG 条目 |
+|---|------|-------------------|
+| [#1](https://github.com/LLM-X-Factorer/cn-seo-geo-atlas/issues/1) | selector pilot 验证（豆包 + DeepSeek 实际 UI） | `exp-doubao-vs-deepseek-paired-queries` 子 1 |
+| [#2](https://github.com/LLM-X-Factorer/cn-seo-geo-atlas/issues/2) | Pilot run（10 次采集端到端验证） | `exp-doubao-vs-deepseek-paired-queries` 子 2 |
+| [#3](https://github.com/LLM-X-Factorer/cn-seo-geo-atlas/issues/3) | 主实验执行（320 次采集 × 3 天） | `exp-doubao-vs-deepseek-paired-queries` 子 3 |
+| [#4](https://github.com/LLM-X-Factorer/cn-seo-geo-atlas/issues/4) | 数据评分 + 统计分析 | `exp-doubao-vs-deepseek-paired-queries` 子 4 |
+| [#5](https://github.com/LLM-X-Factorer/cn-seo-geo-atlas/issues/5) | 回写结果到豆包 / DeepSeek / Princeton 9 卡片 | `exp-doubao-vs-deepseek-paired-queries` 子 5 |
+| [#6](https://github.com/LLM-X-Factorer/cn-seo-geo-atlas/issues/6) | 五大厂 adapter 扩展（wenxin / qianwen / yuanbao） | `tools-five-vendor-adapters` |
+| [#7](https://github.com/LLM-X-Factorer/cn-seo-geo-atlas/issues/7) | source_classifier.py 三套标签扩展 | 合并 `tools-source-classifier-backfill-alibaba` + `-tier-tag` + `-platform-tag` |
+| [#8](https://github.com/LLM-X-Factorer/cn-seo-geo-atlas/issues/8) | ⭐⭐⭐ 中文 LLM 引用源 CTR 测量 | `exp-cn-llm-citation-source-ctr` |
+| [#9](https://github.com/LLM-X-Factorer/cn-seo-geo-atlas/issues/9) | 跨 LLM 信源池 Jaccard 量化（多卡复用） | 合并 `exp-cn-jaccard-of-cited-sources-cross-llm` + `exp-cn-cross-llm-source-jaccard` |
+| [#10](https://github.com/LLM-X-Factorer/cn-seo-geo-atlas/issues/10) | ⭐⭐⭐ 等预算 GEO vs 短视频 ROI 对照 | `exp-cn-equal-budget-channel-comparison` |
 
 ---
 
