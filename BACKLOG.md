@@ -227,7 +227,7 @@
 - [ ] **`tech-cn-llm-vs-traditional-search-decision-funnel`** —— LLM 与小红书 / 淘宝 / 抖音 / 美团 / 朋友推荐的决策漏斗位置对比卡。无需新数据，可基于现有公开报告 + 仓库元假说衍生。
 - [ ] **`tech-cn-ymyl-llm-trust-temporal`** —— YMYL 场景 LLM 信任度纵向跟踪卡（健康 / 法律 / 财务用户警惕度可能波动，需要周期数据）。
 - [ ] **`tech-cn-geo-target-segment-by-industry`** —— 按行业的 GEO 目标客户分层卡（与需求侧卡 2.3 节衔接，为各 GEO 商业模式提供"哪个行业的什么角色是真买家"的清单）。
-- [ ] **`update-dimension-map-three-axis`** —— 把 [`dimension-map-cn.md`](./techniques/dimension-map-cn.md) 的 8 维度结构升级为 **D0（需求侧前置）+ D1-D8（信号侧）+ DS（供给侧 / 商业模式侧）** 的三轴结构，把需求侧卡 + 商业模式分类卡纳入图谱。这是仓库结构演进必走的一步。
+- [x] **`update-dimension-map-three-axis`** —— 把 [`dimension-map-cn.md`](./techniques/dimension-map-cn.md) 的 8 维度结构升级为 **D0（需求侧前置）+ D1-D8（信号侧）+ DS（供给侧 / 商业模式侧）** 的三轴结构。✅ 完成于 2026-05-03：dimension-map 376 → 487 行，元假说总数 68 → 79，强假说集 4.1 新增 5 条 ⭐⭐⭐，话术索引新增 ≥ 8 条，主体路径全部加 D0 前置 + 新增 GEO 服务商路径。
 - [ ] **`tech-cn-7w-media-channel-classification`** —— 把"7 万+ 媒体发布渠道"按"百度收录站 / 公众号 / 知乎 / 小红书 / B 站 / 自建网站"分类，作为 [`private-vs-public-source-cn.md`](./techniques/private-vs-public-source-cn.md) 的具体落地补充。来源：探词手册 p13。
 - [ ] **`exp-cn-source-flooding-ab-vs-citation-rate`** —— A/B 实验：同 query 同时间段，监测铺量前 vs 铺量后 4 周引用差异。**采购一次 RaaS 服务**作为实验输入。资金依赖（≥ ¥1 万）+ 流程合规依赖。
 

@@ -51,7 +51,8 @@
 - [`docs/meeting-2026-05-03-geo-demand-and-business-model.md`](./docs/meeting-2026-05-03-geo-demand-and-business-model.md) —— 会议纪要：探词业务技术反向工程 + 商业模式反推 + GEO 需求侧拆解 + 七层商业模式扫描 + 探词合理性 / 缺陷 / 结构性风险 + 7 个值得探索方向。
 - [`techniques/geo-demand-side-fitness-cn.md`](./techniques/geo-demand-side-fitness-cn.md) —— **仓库第一张需求侧卡**（D0 需求侧前置维度，前置于 dimension-map-cn 现有 8 维度）：用户层 / 场景层 / 决策路径位置层三层拆解 + 用户类型 × 问题类型矩阵识别 GEO 真有效的 4 类窄场景 + 5 条元假说（含 ⭐⭐⭐ 强反话术 C "服务商客户画像越宽越说明销售在勉强匹配市场"）+ 2 个实验设计（E1 ⭐⭐⭐ 决策路径调研 / E2 ⭐⭐ B2B 选型 LLM 渗透率，均资金依赖）+ 衍生 BACKLOG 7 条。
 - [`techniques/geo-business-model-taxonomy-cn.md`](./techniques/geo-business-model-taxonomy-cn.md) —— **仓库第一张供给侧卡**（DS 供给侧维度）：七层商业模式分类（数据 / 工具 / 内容 / 服务 / 平台 / 防御 / 标准）× 6 维度 + 投入产出结构 + 平台原生功能取代风险三个独立切片 + 6 条元假说（含 ⭐⭐⭐ 强反话术 A "LLM 平台一旦自建广告位 c/d 层中介模式整体被腰斩" 和 ⭐⭐⭐ C "反 GEO 监测是被严重低估的对称赛道"）+ 2 个实验设计（E1 ⭐⭐⭐ 平台广告位监控 / E2 ⭐⭐ 收入构成反推）+ 与服务商自我定位话术对照 + 衍生 BACKLOG 8 条。
-- 仓库结构演进：14+1 → **16+1** 张技术卡（14 信号侧 + 1 元卡 + **新增 1 张需求侧前置卡 D0 + 1 张供给侧卡 DS**）。两卡 + [`geo-roi-framework-cn.md`](./techniques/geo-roi-framework-cn.md) 形成 **"需求 + 信号 + 模式 + ROI"** 四轴完整研究地图。后续 [`techniques/geo-source-pool-density-cn.md`](./techniques/geo-source-pool-density-cn.md)（信源池占有率密度卡）+ [`update-dimension-map-three-axis`](./BACKLOG.md)（dimension-map 升级为 D0 + D1-D8 + DS 三轴结构）。
+- 仓库结构演进：14+1 → **16+1** 张技术卡（14 信号侧 + 1 元卡 + **新增 1 张需求侧前置卡 D0 + 1 张供给侧卡 DS**）。两卡 + [`geo-roi-framework-cn.md`](./techniques/geo-roi-framework-cn.md) 形成 **"需求 + 信号 + 模式 + ROI"** 四轴完整研究地图。
+- [`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md) **三轴升级**（376 → 487 行）：8 维度结构升级为 **D0（需求侧）+ D1-D8（信号侧）+ DS（供给侧）** 三轴，元假说总数 68 → **79**，强假说集 4.1 新增 5 条 ⭐⭐⭐ 反话术（D0 三条 + DS 两条），话术索引新增 ≥ 8 条，主体决策路径全部加 D0 前置 + 新增"GEO 服务商 / 创业者" 路径，空缺维度标记 2 项已填补 + 新增 3 项 DS 子空缺。
 
 ### 7. 项目级文档 ✅
 - [`README.md`](./README.md) — 已更新到 2026-05-02 现状（14+1 张技术卡 / 8 维度 / 68 元假说 + dimension-map 入口指引 + 仓库特色"怀疑锚点 + 元假说 + 反话术对照"段）
