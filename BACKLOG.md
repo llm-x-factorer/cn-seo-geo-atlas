@@ -67,6 +67,13 @@
 - [ ] **`exp-cn-vendor-pitch-baiyun-tool-recommendation`** —— ⭐⭐ 复测"哪个育种软件比较好"× 文心 / 豆包 / Kimi / 元宝（手册 p16 案例）。冷门 B2B 工具类 query 竞品池小，结果易稳定，是"普通客户案例"复现性的代表样本。
 - [ ] **`exp-cn-vendor-pitch-yuanrun-pinot-noir`** —— ⭐ 复测"国产黑皮诺哪家好喝" / "黑皮诺有什么推荐的牌子" × 豆包 / 千问（手册 p14-15 案例）。小众商品类 query 易复现，作为补充样本。
 
+### 需求侧实证（priority: high，资金依赖）
+
+> 来源：[`techniques/geo-demand-side-fitness-cn.md`](./techniques/geo-demand-side-fitness-cn.md) 第 IV 节实验设计建议。这两条都是仓库需求侧元假说 A、B、E 的直接证伪 / 支持任务。需要资金（调研公司或自建样本），不是当前会话内能立刻跑的微型 pilot。
+
+- [ ] **`exp-cn-llm-decision-path-survey`** —— ⭐⭐⭐ E1 中文消费者真实决策路径分品类调研：≥ 500 名 18-55 岁城市网民 × ≥ 12 类消费场景，量化"先 LLM / 后 LLM / 不用 LLM"占比。预算 ¥3-30 万。直接证伪 / 支持元假说 A、E。
+- [ ] **`exp-cn-b2b-selection-llm-penetration`** —— ⭐⭐ E2 B2B 选型场景 LLM 渗透率独立测量：≥ 100 名 B2B 决策者 × 近 3 个月 ≥ 1 次选型经历跟踪。预算 ¥3-8 万。给 [`geo-roi-framework-cn.md`](./techniques/geo-roi-framework-cn.md) B2B SaaS 类目提供 ROI 输入参数。
+
 ---
 
 ## 🌐 平台调研类（priority: medium）
@@ -209,6 +216,20 @@
     - [ ] **`exp-cn-equal-budget-channel-comparison`** —— 等预算 GEO vs 短视频带货对照（验证元假说 C，⭐⭐⭐ 仓库 GEO ROI 决定性实证）
     - [ ] **`tech-cn-channel-mix-strategy`** —— 把 GEO 放在完整营销 mix（短视频 / 直播 / 私域 / 信息流 / 线下）中的位置评估
 - [x] **`tech-dimension-map-cn`** —— 技术主题卡片维度索引地图 ✅ 完成于 2026-05-02：[`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md)（元卡，14 张技术卡 × 8 维度图谱显式化 + 卡间关系图 + 强假说集 + 服务商话术索引 + 主体决策索引 + 空缺维度 + 4 类读者阅读路径 + 新卡扩展原则）
+- [x] **`tech-cn-geo-demand-side-fitness`** —— GEO 需求侧场景适配地图 ✅ 完成于 2026-05-03：[`techniques/geo-demand-side-fitness-cn.md`](./techniques/geo-demand-side-fitness-cn.md)（**仓库第一张需求侧卡 / D0 前置维度**，三层拆解 + 4 类窄场景识别 + 5 条元假说 + 2 个实验设计 + 与服务商客户画像话术对照）
+
+### 接续需求侧卡的衍生（priority: medium-high）
+
+> 来源：[`techniques/geo-demand-side-fitness-cn.md`](./techniques/geo-demand-side-fitness-cn.md) 第 IX 节衍生 BACKLOG 建议 + [`docs/meeting-2026-05-03-geo-demand-and-business-model.md`](./docs/meeting-2026-05-03-geo-demand-and-business-model.md) 第 8 节行动项。
+
+- [ ] **`tech-cn-geo-business-model-taxonomy`** —— GEO 商业模式七层分类卡（数据层 / SaaS 层 / 内容层 / 服务咨询层 / 平台层 / 反向防御层 / 标准协议层）。每层标"已有玩家 + 合理性 + 强假说"。来源：本次会议纪要第 4 节。**优先级仅次于需求侧卡**——是仓库从信号侧研究跨入"需求 + 信号 + 模式"三轴的第二块拼图。
+- [ ] **`tech-cn-geo-source-pool-density`** —— 信源池占有率密度卡（探词们的真实护城河，仓库当前结构空白）。讨论"在多少家被收录的站上铺多少量才能影响 LLM"的密度问题。是 [`private-vs-public-source-cn.md`](./techniques/private-vs-public-source-cn.md) 的供给量级补充。
+- [ ] **`tech-cn-llm-vs-traditional-search-decision-funnel`** —— LLM 与小红书 / 淘宝 / 抖音 / 美团 / 朋友推荐的决策漏斗位置对比卡。无需新数据，可基于现有公开报告 + 仓库元假说衍生。
+- [ ] **`tech-cn-ymyl-llm-trust-temporal`** —— YMYL 场景 LLM 信任度纵向跟踪卡（健康 / 法律 / 财务用户警惕度可能波动，需要周期数据）。
+- [ ] **`tech-cn-geo-target-segment-by-industry`** —— 按行业的 GEO 目标客户分层卡（与需求侧卡 2.3 节衔接，为各 GEO 商业模式提供"哪个行业的什么角色是真买家"的清单）。
+- [ ] **`update-dimension-map-add-d0-demand-side`** —— 把 [`dimension-map-cn.md`](./techniques/dimension-map-cn.md) 的 8 维度结构更新为 **D0（需求侧前置）+ D1-D8（信号侧）**，把需求侧卡纳入图谱。这是仓库结构演进必走的一步。
+- [ ] **`tech-cn-7w-media-channel-classification`** —— 把"7 万+ 媒体发布渠道"按"百度收录站 / 公众号 / 知乎 / 小红书 / B 站 / 自建网站"分类，作为 [`private-vs-public-source-cn.md`](./techniques/private-vs-public-source-cn.md) 的具体落地补充。来源：探词手册 p13。
+- [ ] **`exp-cn-source-flooding-ab-vs-citation-rate`** —— A/B 实验：同 query 同时间段，监测铺量前 vs 铺量后 4 周引用差异。**采购一次 RaaS 服务**作为实验输入。资金依赖（≥ ¥1 万）+ 流程合规依赖。
 
 ---
 

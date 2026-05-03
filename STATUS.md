@@ -1,6 +1,6 @@
 # 项目当前进度
 
-> 最后更新：2026-05-03（含 2026-05-02 完整产出 + 2026-05-03 文档同步、首次 git 初始化、服务商话术拆解卡 #1）
+> 最后更新：2026-05-03（含 2026-05-02 完整产出 + 2026-05-03 文档同步、首次 git 初始化、服务商话术拆解卡 #1、**仓库第一张需求侧卡 + 会议纪要**）
 > 此文件用于跨会话快速恢复上下文。读完这一页 + [`BACKLOG.md`](./BACKLOG.md) + [`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md) 就能接着干。
 
 ## 已完成（截至 2026-05-02）
@@ -45,6 +45,12 @@
 - [`docs/探词科技-产品手册0407.md`](./docs/探词科技-产品手册0407.md) —— 厂商 PDF 21 页 markdown 转录（视觉读取 + 人工逐页转录，未做语义改写）
 - [`case-studies/wordtrace-vendor-pitch-decon-2026-05.md`](./case-studies/wordtrace-vendor-pitch-decon-2026-05.md) —— **GEO 服务商话术样本 #1** 拆解卡：12 条核心量化主张 × F/P/N 可证伪性分级 + 与仓库 14 张技术卡反话术对照 + 5 份"案例截图"复测可行性评估 + 3 条 micro-pilot 衍生进 BACKLOG。是仓库"反 GEO 服务商话术"基调的第一张实操卡。
 - 衍生 BACKLOG 新小节"服务商话术验证 micro-pilot"3 条：[`exp-cn-vendor-pitch-self-reference-wordtrace`](./BACKLOG.md)（⭐⭐⭐ 与 selector pilot 兼容） / [`exp-cn-vendor-pitch-baiyun-tool-recommendation`](./BACKLOG.md) / [`exp-cn-vendor-pitch-yuanrun-pinot-noir`](./BACKLOG.md)
+
+### 7.6 需求侧维度首张技术卡 + 讨论纪要（新增 2026-05-03）✅
+
+- [`docs/meeting-2026-05-03-geo-demand-and-business-model.md`](./docs/meeting-2026-05-03-geo-demand-and-business-model.md) —— 会议纪要：探词业务技术反向工程 + 商业模式反推 + GEO 需求侧拆解 + 七层商业模式扫描 + 探词合理性 / 缺陷 / 结构性风险 + 7 个值得探索方向。
+- [`techniques/geo-demand-side-fitness-cn.md`](./techniques/geo-demand-side-fitness-cn.md) —— **仓库第一张需求侧卡**（D0 需求侧前置维度，前置于 dimension-map-cn 现有 8 维度）：用户层 / 场景层 / 决策路径位置层三层拆解 + 用户类型 × 问题类型矩阵识别 GEO 真有效的 4 类窄场景 + 5 条元假说（含 ⭐⭐⭐ 强反话术 C "服务商客户画像越宽越说明销售在勉强匹配市场"）+ 2 个实验设计（E1 ⭐⭐⭐ 决策路径调研 / E2 ⭐⭐ B2B 选型 LLM 渗透率，均资金依赖）+ 衍生 BACKLOG 7 条。
+- 仓库结构演进：14+1 → **15+1** 张技术卡（14 信号侧 + 1 元卡 + **新增 1 张需求侧前置卡**）。后续要写 [`techniques/geo-business-model-taxonomy-cn.md`](./techniques/geo-business-model-taxonomy-cn.md)（七层商业模式分类）+ [`techniques/geo-source-pool-density-cn.md`](./techniques/geo-source-pool-density-cn.md)（信源池占有率密度卡）。
 
 ### 7. 项目级文档 ✅
 - [`README.md`](./README.md) — 已更新到 2026-05-02 现状（14+1 张技术卡 / 8 维度 / 68 元假说 + dimension-map 入口指引 + 仓库特色"怀疑锚点 + 元假说 + 反话术对照"段）
@@ -141,9 +147,9 @@
 
 ## 文件总数
 
-68 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 +2：服务商话术拆解 #1 + 厂商 PDF 转录）
+70 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +4：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要）
 
 ```
 $ find . -type f \( -name "*.md" -o -name "*.py" -o -name "*.yaml" -o -name "*.txt" \) | grep -v __pycache__ | wc -l
-68
+70
 ```
