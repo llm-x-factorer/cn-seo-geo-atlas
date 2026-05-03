@@ -59,6 +59,20 @@
 - [`techniques/anti-geo-monitoring-cn.md`](./techniques/anti-geo-monitoring-cn.md) —— **DS 元假说 C 的具体展开卡**：4 类反 GEO 监测需求拆解（N1 品牌可见度 / N2 竞品攻击 / N3 AI 幻觉 / N4 AI 舆情扩散）+ 客户决策人 / 预算来源 / 购买心理与进攻型对照 + 与传统舆情监测的技术差异 + 各 LLM 平台监测难度对照 + 7 条元假说（含 ⭐⭐⭐ 强反话术 A "需求规模与进攻型相当甚至更大"、⭐⭐⭐ C "技术门槛低于进攻型"）+ 3 个实验设计（E1 ⭐⭐⭐ 客户访谈 / E2 ⭐⭐ YMYL 幻觉率 / E3 ⭐⭐ 一致性指数）。
 - 仓库结构演进：16+1 → **17+1** 张技术卡。dimension-map DS 维度从 1 张主卡 → 1 主卡 + 1 子卡。元假说总数 79 → **86**。
 
+### 7.8 对外博客系列首发（新增 2026-05-03）✅
+
+仓库新增 [`blog/`](./blog/) 目录，6 篇系列博客对外输出研究成果。要求：直白、不用隐喻、避免行业黑话。
+
+- [`blog/README.md`](./blog/README.md) —— 系列索引 + 收录原则 + 阅读建议（按读者类型分路径）
+- [`blog/01-vendor-pitch-deconstruction.md`](./blog/01-vendor-pitch-deconstruction.md) —— 拆一份 GEO 服务商产品手册（F/P/N 可证伪性框架）
+- [`blog/02-who-uses-llm-for-decisions.md`](./blog/02-who-uses-llm-for-decisions.md) —— 什么人、什么场景，真的用 LLM 找答案（GEO 真实可寻址市场拆解）
+- [`blog/03-seven-ways-to-make-money.md`](./blog/03-seven-ways-to-make-money.md) —— GEO 公司怎么赚钱（七种生意模式 + 客户价值 vs 模式合理性独立判断）
+- [`blog/04-platform-ad-slot-risk.md`](./blog/04-platform-ad-slot-risk.md) —— GEO 行业最大的单一风险：LLM 平台自己卖广告位（c/d 层中介模式生命周期）
+- [`blog/05-anti-geo-monitoring.md`](./blog/05-anti-geo-monitoring.md) —— 被严重低估的另一个生意：反 GEO 监测（公关 / 法务侧的空白赛道 + YMYL 监管驱动）
+- [`blog/06-should-you-do-geo.md`](./blog/06-should-you-do-geo.md) —— 你公司要不要做 GEO（四关决策清单 + 不做 GEO 的明确名单）
+
+合计 1059 行，约 14000 字。每篇末尾"延伸阅读"链接回仓库技术卡 / 案例 / docs。**仓库从研究资产首次跨入"对外可读内容输出"阶段**。
+
 ### 7. 项目级文档 ✅
 - [`README.md`](./README.md) — 已更新到 2026-05-02 现状（14+1 张技术卡 / 8 维度 / 68 元假说 + dimension-map 入口指引 + 仓库特色"怀疑锚点 + 元假说 + 反话术对照"段）
 - [`CLAUDE.md`](./CLAUDE.md) — **项目级 Claude Code 指引**（新建 2026-05-02）：项目定位 + 关键约束 + 写作风格 + 技术主题卡标准结构 + 不应建新卡的情况 + 用户偏好 + 三大卡住点速查
@@ -154,9 +168,9 @@
 
 ## 文件总数
 
-72 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +6：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要 + 供给侧首张技术卡 + **DS 子展开卡反 GEO 监测**）
+79 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +13：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要 + 供给侧首张技术卡 + DS 子展开卡反 GEO 监测 + **博客系列首发 6 篇 + 索引 README**）
 
 ```
 $ find . -type f \( -name "*.md" -o -name "*.py" -o -name "*.yaml" -o -name "*.txt" \) | grep -v __pycache__ | wc -l
-72
+79
 ```

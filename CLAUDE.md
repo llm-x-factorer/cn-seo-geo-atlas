@@ -69,6 +69,6 @@
 
 距离"产出第一个一手研究结论"还差 selector pilot → pilot run → 主实验执行 → score + analyze → 回写。**前 3 步只能由用户做（账号 + 网络环境）**。
 
-## 当前文件总数：72（持续增长中，每次新建卡片必须更新 [`STATUS.md`](./STATUS.md) 第 11 节文件总数）
+## 当前文件总数：79（持续增长中，每次新建卡片必须更新 [`STATUS.md`](./STATUS.md) 第 11 节文件总数）
 
 ## 看到这一行说明你已读完——现在去读 [`STATUS.md`](./STATUS.md) 和 [`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md)。
