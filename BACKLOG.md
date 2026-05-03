@@ -57,6 +57,16 @@
 - [ ] **`exp-princeton-meta-C-multi-actor`** —— 多竞争方下的策略衰减（元假说 C），中文复现 C-SEO Bench。
 - [ ] **`exp-princeton-9-keyword-stuffing-cn`** —— 关键词堆砌在中文 LLM 是否依然反向（低优先级，预期与英文一致）。
 
+### 服务商话术验证 micro-pilot（最低成本 + 与 selector pilot 兼容）
+
+> 来源：[`case-studies/wordtrace-vendor-pitch-decon-2026-05.md`](./case-studies/wordtrace-vendor-pitch-decon-2026-05.md)。这三条都是**任意账号即可复测的现成 query**，零客户依赖、零隐私风险，可顺路完成 doubao / qianwen / wenxin / yuanbao / kimi 五个平台的 selector pilot。完成后回写到上述 case-study 卡的"复测结果"段。
+>
+> 复测最低标准：≥ 2 账号 × ≥ 2 时段 × ≥ 5 次 / 平台 × 隐私模式 + 截图 + 文本双留底，按 [`tools/exp-doubao-vs-deepseek-paired/source_classifier.py`](./tools/exp-doubao-vs-deepseek-paired/source_classifier.py) 同套规则归类。
+
+- [ ] **`exp-cn-vendor-pitch-self-reference-wordtrace`** —— ⭐⭐⭐ 复测"湖南哪家 GEO 公司好"× 豆包 / 千问 / Kimi / 文心 / 百度 AI（手册 p17 自指型案例）。**最高优先级**：5 平台同时跑，与 selector pilot 高度兼容；自指型 query 受 GEO 工作影响最强，是 C-SEO Bench 立场下天然测试场。验证厂商主张"长沙探词科技稳居 5 平台前二"是否在跨账号 / 跨时段下成立。
+- [ ] **`exp-cn-vendor-pitch-baiyun-tool-recommendation`** —— ⭐⭐ 复测"哪个育种软件比较好"× 文心 / 豆包 / Kimi / 元宝（手册 p16 案例）。冷门 B2B 工具类 query 竞品池小，结果易稳定，是"普通客户案例"复现性的代表样本。
+- [ ] **`exp-cn-vendor-pitch-yuanrun-pinot-noir`** —— ⭐ 复测"国产黑皮诺哪家好喝" / "黑皮诺有什么推荐的牌子" × 豆包 / 千问（手册 p14-15 案例）。小众商品类 query 易复现，作为补充样本。
+
 ---
 
 ## 🌐 平台调研类（priority: medium）

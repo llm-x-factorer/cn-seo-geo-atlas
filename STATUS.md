@@ -1,6 +1,6 @@
 # 项目当前进度
 
-> 最后更新：2026-05-03（含 2026-05-02 完整产出 + 2026-05-03 文档同步与首次 git 初始化）
+> 最后更新：2026-05-03（含 2026-05-02 完整产出 + 2026-05-03 文档同步、首次 git 初始化、服务商话术拆解卡 #1）
 > 此文件用于跨会话快速恢复上下文。读完这一页 + [`BACKLOG.md`](./BACKLOG.md) + [`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md) 就能接着干。
 
 ## 已完成（截至 2026-05-02）
@@ -39,6 +39,12 @@
 - [`techniques/overseas-cn-deployment.md`](./techniques/overseas-cn-deployment.md) — 境外品牌进入中文 GEO 的部署路径（**主体决策维度**，5 种路径 A-E 横向对照 + 主体侧 / 内容侧两个独立维度 + 行业差异矩阵 + 5 条元假说 + 3 个实验设计；强假说 D：70% 隐性成本在内容审查不在技术部署——直接打脸"建站 + 翻译 = 中文 GEO"话术）
 - [`techniques/geo-roi-framework-cn.md`](./techniques/geo-roi-framework-cn.md) — 中文 GEO ROI 评估框架（**反话术总论**，前 13 张技术卡元假说收敛 + 投入 3 类 / 产出 3 类拆解 + 按主体类型 / 行业差异化 ROI + 投入优先级排序含"不建议"清单 + 5 条元假说 + 3 个实验设计；强假说 C：机会成本是最常被隐藏项——指明"做 GEO"不是普世建议而是特定主体 + 特定行业的选择）
 - [`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md) — **技术主题卡片维度索引地图（元卡）**，把 14 张卡 × 8 维度显式化 + 卡间关系图 + 强假说集 + 服务商话术索引 + 主体决策索引 + 空缺维度 + 4 类读者的阅读路径 + 新卡扩展原则；in-validation 状态——结构稳定但元假说待实证
+
+### 7.5 服务商话术拆解（新增 2026-05-03）✅
+
+- [`docs/探词科技-产品手册0407.md`](./docs/探词科技-产品手册0407.md) —— 厂商 PDF 21 页 markdown 转录（视觉读取 + 人工逐页转录，未做语义改写）
+- [`case-studies/wordtrace-vendor-pitch-decon-2026-05.md`](./case-studies/wordtrace-vendor-pitch-decon-2026-05.md) —— **GEO 服务商话术样本 #1** 拆解卡：12 条核心量化主张 × F/P/N 可证伪性分级 + 与仓库 14 张技术卡反话术对照 + 5 份"案例截图"复测可行性评估 + 3 条 micro-pilot 衍生进 BACKLOG。是仓库"反 GEO 服务商话术"基调的第一张实操卡。
+- 衍生 BACKLOG 新小节"服务商话术验证 micro-pilot"3 条：[`exp-cn-vendor-pitch-self-reference-wordtrace`](./BACKLOG.md)（⭐⭐⭐ 与 selector pilot 兼容） / [`exp-cn-vendor-pitch-baiyun-tool-recommendation`](./BACKLOG.md) / [`exp-cn-vendor-pitch-yuanrun-pinot-noir`](./BACKLOG.md)
 
 ### 7. 项目级文档 ✅
 - [`README.md`](./README.md) — 已更新到 2026-05-02 现状（14+1 张技术卡 / 8 维度 / 68 元假说 + dimension-map 入口指引 + 仓库特色"怀疑锚点 + 元假说 + 反话术对照"段）
@@ -114,6 +120,7 @@
 
 ## 下一步候选方向（按优先级）
 
+0. **⭐ A0. 跑服务商话术验证 micro-pilot**（**新最高优先级**，2026-05-03 加入）—— [`exp-cn-vendor-pitch-self-reference-wordtrace`](./BACKLOG.md)："湖南哪家 GEO 公司好" × 5 平台 × ≥ 2 账号 × ≥ 2 时段 × ≥ 5 次。零账号成本、与 doubao / qianwen / wenxin / yuanbao / kimi 五个平台 selector pilot 高度兼容；做完直接为 A 项主实验铺路；同时回写 [`case-studies/wordtrace-vendor-pitch-decon-2026-05.md`](./case-studies/wordtrace-vendor-pitch-decon-2026-05.md) 的"复测结果"段。
 1. **A. 跑第一个实验 pilot**（最高 ROI 仍然不变）—— 用户人工 + Claude 协助调 selector，产出第一份真实数据
 2. **B. 平台 changelog 系列起手** —— 写 [`docs-doubao-changelog`](./BACKLOG.md) 建立 changelog 卡片模式，作为后续各平台 changelog 范本（豆包 / DeepSeek / 文心 / 千问 / 元宝 / 百度 / 小红书）
 3. **C. 继续铺技术主题** —— [`tech-cn-channel-mix-strategy`](./BACKLOG.md)（接 GEO ROI 框架的 mix 视角）/ [`tech-cn-corporate-knowledge-geo`](./BACKLOG.md)（企业内部知识库 GEO 专题）/ [`tech-cn-anti-monopoly-and-geo-roadmap`](./BACKLOG.md)（接 platform-search-blockade 衍生）/ [`tech-cn-llm-crawler-ua-registry`](./BACKLOG.md)（接 llms.txt 卡衍生）
@@ -134,9 +141,9 @@
 
 ## 文件总数
 
-66 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)）
+68 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 +2：服务商话术拆解 #1 + 厂商 PDF 转录）
 
 ```
 $ find . -type f \( -name "*.md" -o -name "*.py" -o -name "*.yaml" -o -name "*.txt" \) | grep -v __pycache__ | wc -l
-66
+68
 ```
