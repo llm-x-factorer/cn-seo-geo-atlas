@@ -236,7 +236,8 @@
 > 来源：[`techniques/geo-business-model-taxonomy-cn.md`](./techniques/geo-business-model-taxonomy-cn.md) 第 IX 节衍生 BACKLOG 建议。
 
 - [ ] **`exp-cn-llm-platform-ad-slot-monitor`** —— ⭐⭐⭐ 6 大平台广告位上线监控（豆包 / 元宝 / 千问 / 文心 / Kimi / 小红书问一问）。**🔄 2026-05-04 升级**为 [`exp-cn-llm-platform-4-monetization-form-monitor`](./BACKLOG.md)（见下条）——单押"广告位"形态被审计证伪，监测应扩为 4 形态。原项保留作认知演化痕迹。
-- [ ] **`exp-cn-llm-platform-4-monetization-form-monitor`** —— ⭐⭐⭐ 6 大平台 **4 形态平台变现监控**（订阅制 / 电商佣金 / 自建品牌方监测后台 / API 收费）。验证供给侧元假说 A 升级版。每形态分别监测信号：（1）订阅版用户数披露 + 答案质量分层；（2）答案体中商品卡频率 + 平台抽佣率；（3）官方"商家品牌可见度查询"模块；（4）API 公开定价 + 企业调用量披露。可与 [`tools/exp-doubao-vs-deepseek-paired/`](./tools/exp-doubao-vs-deepseek-paired/) 监测系统集成扩展。低成本（自建爬虫 + 公开物料追踪）。
+- [x] **`exp-cn-llm-platform-4-monetization-form-monitor`** —— ⭐⭐⭐ 6 大平台 **4 形态平台变现监控** ✅ **2026-05-04 完成实验设计 + T0 基线**：[`experiments/exp-cn-llm-platform-4-monetization-form-monitor.md`](./experiments/exp-cn-llm-platform-4-monetization-form-monitor.md)（273 行 / 4-6 小时初始搭建 / ¥0 现金）。**T0 核心发现**：形态 1 订阅制 3/6 已上线（豆包 / 文心 / Kimi）/ 形态 2 电商佣金 2/6 已链接（豆包 → 抖音商店 / 千问 → 淘宝）/ 形态 3 自建品牌方监测后台 **0/6 上线**（最高优先级监测点）/ 形态 4 API 收费 4-5/6 已商业化（豆包定价 doubao-seed-2.0-pro 3.2/16 元每百万 tokens 已公开）。监测节奏：季度全面 + 月度告警 + 一次性事件即时触发。后续运营任务见下条。
+- [ ] **`tech-cn-llm-platform-4-form-quarterly-report`** —— 平台 4 形态变现季度报告（每 3 个月输出 1 篇 / 更新 T0 基线 / 触发仓库 DS 假说重审）。第一份报告窗口 2026-08。
 - [ ] **`exp-cn-geo-vendor-revenue-structure`** —— ⭐⭐ 5 家 GEO 公司收入构成反推（看融资 PR / 招聘 JD / 案例文章 / 媒体访谈）。验证元假说 B：多数所谓 SaaS 实际主收入仍是 RaaS。人力 ≈ 8-15 小时（全公开信息）。
 - [x] **`tech-cn-anti-geo-monitoring`** —— ⭐⭐⭐ 反 GEO 监测专题卡 ✅ 完成于 2026-05-03：[`techniques/anti-geo-monitoring-cn.md`](./techniques/anti-geo-monitoring-cn.md)（**DS 元假说 C 具体展开 / DS 维度首张子卡**，386 行，4 类需求拆解 + 客户决策人/预算/心理对照 + 与传统舆情监测技术差异 + 各 LLM 平台监测难度 + 7 条元假说 + 3 个实验设计 + 衍生 BACKLOG 7 条）
 
