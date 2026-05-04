@@ -73,6 +73,12 @@
 
 合计 1059 行，约 14000 字。每篇末尾"延伸阅读"链接回仓库技术卡 / 案例 / docs。**仓库从研究资产首次跨入"对外可读内容输出"阶段**。
 
+### 7.9 元假说审计（新增 2026-05-04）✅
+
+- [`audits/2026-05-04_meta-hypothesis-audit.md`](./audits/2026-05-04_meta-hypothesis-audit.md) —— **仓库第一份反向审计报告**：基于 7 个反转事实（迈富时 02556.HK 港股上市 / PureblueAI 蓝色光标投资 / 智推时代 A 股投资 / 百分点参与 40 项国标 / 央企 137 万级招标 / 信通院起草标准 + CR5=62.3% / 平台变现非凤巢式）对 86 条元假说做系统性反向审计。判决分布 ✓ 28 / ◐ 17 / ✗ 9 / ? 32（30.2% 严格性合格）。识别 4 个隐含前提中 2 证伪（"草莽期"+"创业 SaaS 为主"）+ 1 部分证伪（"广告位最大单一风险"形态错——实际 4 形态：订阅 / 电商佣金 / 监测后台 / API）+ 1 部分证伪（"客户付费弱仅窄场景"——遗漏防御侧）。
+- 已落地修订标注：[`techniques/geo-business-model-taxonomy-cn.md`](./techniques/geo-business-model-taxonomy-cn.md)（A ✗ / B ◐ / F ◐ / C/D 强化 ✓✓ / E ✓）+ [`techniques/geo-demand-side-fitness-cn.md`](./techniques/geo-demand-side-fitness-cn.md)（B ◐ / C ✗ / D ◐）+ [`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md) 4.1 强假说集标注 2 条 🔄 已降级 + [`case-studies/wordtrace-vendor-pitch-decon-2026-05.md`](./case-studies/wordtrace-vendor-pitch-decon-2026-05.md) 顶部加 7 条反转事实补丁。**所有原文保留作认知演化痕迹**——P1 必改 8 项的正式重写在后续集中执行。
+- **审计核心结论**：底座没崩，盖子歪了。D1-D8 信号侧 68 条假说在反转事实射程外，整体世界观成立；D0 + DS 18 条假说严重低估行业成熟度，被强化的 4 个判断（反 GEO 监测 / 标准协议层 / YMYL 监管驱动 / ROI 框架）是审计后剩下最坚固的部分。
+
 ### 7. 项目级文档 ✅
 - [`README.md`](./README.md) — 已更新到 2026-05-02 现状（14+1 张技术卡 / 8 维度 / 68 元假说 + dimension-map 入口指引 + 仓库特色"怀疑锚点 + 元假说 + 反话术对照"段）
 - [`CLAUDE.md`](./CLAUDE.md) — **项目级 Claude Code 指引**（新建 2026-05-02）：项目定位 + 关键约束 + 写作风格 + 技术主题卡标准结构 + 不应建新卡的情况 + 用户偏好 + 三大卡住点速查
@@ -168,9 +174,9 @@
 
 ## 文件总数
 
-79 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +13：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要 + 供给侧首张技术卡 + DS 子展开卡反 GEO 监测 + **博客系列首发 6 篇 + 索引 README**）
+80 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +13：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要 + 供给侧首张技术卡 + DS 子展开卡反 GEO 监测 + 博客系列首发 6 篇 + 索引 README；**2026-05-04 +1**：元假说审计报告）
 
 ```
 $ find . -type f \( -name "*.md" -o -name "*.py" -o -name "*.yaml" -o -name "*.txt" \) | grep -v __pycache__ | wc -l
-79
+80
 ```

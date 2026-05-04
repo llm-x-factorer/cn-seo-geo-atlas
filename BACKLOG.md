@@ -239,6 +239,16 @@
 - [ ] **`exp-cn-geo-vendor-revenue-structure`** —— ⭐⭐ 5 家 GEO 公司收入构成反推（看融资 PR / 招聘 JD / 案例文章 / 媒体访谈）。验证元假说 B：多数所谓 SaaS 实际主收入仍是 RaaS。人力 ≈ 8-15 小时（全公开信息）。
 - [x] **`tech-cn-anti-geo-monitoring`** —— ⭐⭐⭐ 反 GEO 监测专题卡 ✅ 完成于 2026-05-03：[`techniques/anti-geo-monitoring-cn.md`](./techniques/anti-geo-monitoring-cn.md)（**DS 元假说 C 具体展开 / DS 维度首张子卡**，386 行，4 类需求拆解 + 客户决策人/预算/心理对照 + 与传统舆情监测技术差异 + 各 LLM 平台监测难度 + 7 条元假说 + 3 个实验设计 + 衍生 BACKLOG 7 条）
 
+### 接续 2026-05-04 元假说审计的衍生（priority: medium-high）
+
+> 来源：[`audits/2026-05-04_meta-hypothesis-audit.md`](./audits/2026-05-04_meta-hypothesis-audit.md) 第四节"新发现的研究空白"。
+
+- [ ] **`tech-cn-mofusoft-tgeo-reverse-engineering`** —— ⭐⭐⭐ 迈富时（02556.HK）T-GEO™ 五层认知架构反工程。基于年报 + 公告 + 招股书 + 客户案例公开物料，反推 T-GEO 实际能力边界 + Tforce 千亿大模型在 GEO 业务中的实际作用。仓库**唯一可获 A 级公开数据源**——港股年报披露 GEO 业务数据。预算 ¥0（公开物料）+ 8-15 小时。补足 DS 商业模式分类的 h 层"上市营销云横向扩展"。
+- [ ] **`tech-cn-percent-national-standard-path`** —— ⭐⭐ 百分点科技参与 40 项国标的具体路径调研。识别百分点参与的 GEO 相关国标（信通院《GEO 服务可信基本要求》是否包括）+ CMMI 5 / ISO20000 在 GEO 服务可信认证中的位置 + 党校案例库具体内容。验证 DS 元假说 D（标准协议层最高 ROI 位置）的具体推动方。
+- [ ] **`tech-cn-zhitui-customer-portrait-deep-dive`** —— ⭐⭐ 智推时代客户画像深挖（三七互娱 / 作业帮 / 小鹏 / 理想 + 入选艾瑞 2026 GEO 行业研究报告 + 进天津商业大学新工科课程）。验证 D0 元假说 C 修订方向——头部 / 腰部 GEO 公司宽客户画像是大客户密度的反映而非销售勉强匹配。
+- [ ] **`tech-cn-geo-industry-cr5-tracker`** —— 行业 CR5 集中度纵向跟踪（艾瑞 2026 Q1 已达 62.3%）。预期 2-3 年内并购窗口打开——头部上市公司（迈富时 / 蓝色光标系 / 三七互娱系）可能横向并购腰部创业 GEO 公司。
+- [ ] **`tech-cn-platform-insider-startup-pattern`** —— "平台内部人 + 上市投资"创业模式专题（PureblueAI 清蓝 = 前豆包市场负责人 + 蓝色光标领投是新现象）。仓库假说未覆盖此类组合。
+
 ### 接续反 GEO 监测卡的衍生（priority: medium-high）
 
 > 来源：[`techniques/anti-geo-monitoring-cn.md`](./techniques/anti-geo-monitoring-cn.md) 第 IX 节衍生 BACKLOG 建议。

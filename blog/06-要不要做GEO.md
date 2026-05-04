@@ -2,6 +2,10 @@
 
 **系列 6 / 6 · 2026-05-03**
 
+> 🔄 **2026-05-04 审计修订标注**（[`audits/2026-05-04_meta-hypothesis-audit.md`](../audits/2026-05-04_meta-hypothesis-audit.md)）：本文"第一关 4 类窄区"清单基于 [`techniques/geo-demand-side-fitness-cn.md`](../techniques/geo-demand-side-fitness-cn.md) 元假说 B（已被审计判 ◐）。修订方向：第一关清单应升级为 **5 类**——加第 5 类"**品牌防御 + 合规留痕 + AI 幻觉监测**"（央企 + 上市公司 + YMYL 监管驱动客户群体，决策人是公关 / 法务而非营销总监）。
+>
+> 详见 blog/02 顶部修订标注 + 仓库 [`techniques/anti-geo-monitoring-cn.md`](../techniques/anti-geo-monitoring-cn.md)（DS 维度反 GEO 监测专题卡，被审计强化为 ✓✓）。"4 类外明确不做名单" 也需重审——本地服务 / 大宗高客单等行业的**品牌方**仍可能有防御性 GEO 采购动机（F5 东风 Honda / 东阿阿胶 / 立白 / 海信 / 招行 / 华为均有招标）。**正文保留作认知演化痕迹**。
+
 前 5 篇博客拆完了 GEO 行业的供需两侧。这一篇把判断流程整理成一份决策清单。
 
 如果你是企业的 CMO、市场负责人、数字化转型负责人，或者就是老板本人——这篇博客的目标是让你在 30 分钟内对"我们要不要做 GEO" 形成一个不被服务商话术误导的判断。
