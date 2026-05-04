@@ -99,6 +99,17 @@
 - **与 wordtrace 卡（Tier 3）形成头部 vs 尾部对照组**——12 个维度对照表显示两个样本所有可观测谓词都呈系统性差异，验证分层卡画像区分。
 - 仓库结构：**18 张技术卡 / 91 条元假说 / 2 张 case-study 卡（Tier 1 + Tier 3 完整对照组）**。剩余 E1 第二阶段约 6-13 小时人力（年报正文阅读 + 关联方交易 + 投资者关系记录 + 季报对照）。
 
+### 7.14 会话总结 + 文档同步 + 记忆更新（新增 2026-05-04）✅
+
+- [`audits/2026-05-04-session-summary.md`](./audits/2026-05-04-session-summary.md) —— **本次会话的跨会话恢复点**。涵盖 11 个 commit 时间线 / 4 个隐含前提的判决 / 三层完整对照组 / 4 形态 T0 基线 / 6 项审计 brief 数据修正 / 下一会话接续路径。
+- 项目文档同步：[`STATUS.md`](./STATUS.md) 三大卡住点 + 下一步候选方向更新到 2026-05-04 状态 + [`README.md`](./README.md) / [`CLAUDE.md`](./CLAUDE.md) 文件总数 + 必读清单同步。
+- 记忆系统升级（`/Users/liu/.claude/projects/-Users-liu-Projects-cn-seo-geo-atlas/memory/`）：
+  - 升级 [`project_dimension_atlas_saturation.md`](memory) 从"14+1 卡饱和"到"18 卡 + 实证瓶颈阶段"
+  - 新增 [`feedback_audit_baseline_refined.md`](memory)：仓库基调精确化为分层判定（反尾部 / 接受腰部 A 级 / 不反头部）
+  - 新增 [`project_audit_2026_05_04_complete.md`](memory)：审计闭环 + 跨会话恢复入口
+  - 更新 [`MEMORY.md`](memory) 索引
+- **本次会话总结**：从审计触发到结构重建到实证启动的完整闭环——11 个 commit / 18 张技术卡 / 91 元假说 / 三层对照组 / 4 形态 T0。**这是仓库从"概念叠卡"阶段进入"实证瓶颈"阶段的拐点**。
+
 ### 7.13 4 形态平台变现监测系统启动（新增 2026-05-04）✅
 
 - [`experiments/exp-cn-llm-platform-4-monetization-form-monitor.md`](./experiments/exp-cn-llm-platform-4-monetization-form-monitor.md) —— **DS 元假说 A 升级版"4 形态平台变现冲击"的实证基础设施**。273 行。建立 6 平台 × 4 形态 = 24 监测点的协议 + T0 基线 + 季度全面 / 月度告警 / 一次性事件三级响应机制。
@@ -178,11 +189,21 @@
 - [`techniques/geo-roi-framework-cn.md`](./techniques/geo-roi-framework-cn.md) —— 中文 GEO ROI 评估框架（**反话术总论维度**，前 13 张技术卡的元假说收敛为 ROI 决策框架）
 - [`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md) —— 技术主题卡片维度索引地图（**元卡**，14 卡 × 8 维度显式化 + 卡间关系图 + 强假说集 + 4 类索引）
 
-**仓库三大卡住点**（按优先级）：
+**仓库三大卡住点（2026-05-04 更新）**：
 
-1. **第一个实验未跑过**：[`tools/exp-doubao-vs-deepseek-paired/`](./tools/exp-doubao-vs-deepseek-paired/) 工具栈就绪，selector 标 `# TODO: pilot-verify`，等待人工 pilot
-2. **五大厂实验未启动**：设计完成，依赖第一个实验跑通后才能启动；需要 3 个新 adapter（wenxin / qianwen / yuanbao）
-3. **大量元假说未实证**：14 张技术主题卡共 68 条元假说全部 `concept`，需要数据回写
+1. **第一个实验未跑过**：[`tools/exp-doubao-vs-deepseek-paired/`](./tools/exp-doubao-vs-deepseek-paired/) 工具栈就绪，selector 标 `# TODO: pilot-verify`，等待人工 pilot——**仓库当前唯一硬瓶颈**
+2. **服务商话术验证 micro-pilot 未跑过**：[`exp-cn-vendor-pitch-self-reference-wordtrace`](./BACKLOG.md) 与 selector pilot 高度兼容（5 平台共用），适合作为 #1 的入门题。仍需用户人工 + 账号
+3. **大量元假说未实证**：18 张技术主题卡共 91 条元假说——审计后判决 ✓28 / ◐17 / ✗9 / ?32，但 ✓/◐/✗ 大多基于反转事实 + Tier 1/2/3 case-study 数据的逻辑外推，未经过 pilot 实证
+
+**审计后仓库结构**（2026-05-04 完成）：
+
+- ✅ 元假说审计闭环（[`audits/2026-05-04_meta-hypothesis-audit.md`](./audits/2026-05-04_meta-hypothesis-audit.md)）
+- ✅ DS 七层 → 八层（h 层"横向扩展"）
+- ✅ D0 元假说 B 4 类 → 5 类窄场景（加品牌防御维度）
+- ✅ DS 元假说 A 单形态 → 4 形态（订阅 / 电商佣金 / 监测后台 / API）
+- ✅ 三层完整对照组（[`mofusoft Tier 1`](./case-studies/mofusoft-tier1-reverse-engineering-2026-05.md) + [`zhitui Tier 2`](./case-studies/zhitui-tier2-2026-05.md) + [`wordtrace Tier 3`](./case-studies/wordtrace-vendor-pitch-decon-2026-05.md)）
+- ✅ 仓库基调精确化："反**尾部** SEO 软文型话术"，**不反** A 级结构性背书层
+- ✅ 4 形态平台变现监测系统启动 + T0 基线（[`exp-cn-llm-platform-4-monetization-form-monitor`](./experiments/exp-cn-llm-platform-4-monetization-form-monitor.md)）
 
 距离"产出第一个一手研究结论"还差：
 
@@ -194,15 +215,27 @@
 
 > 上述 1-3 步只能由用户做（账号 + 网络环境）。Claude 可以协助 selector 调试、数据分析、回写。
 
-## 下一步候选方向（按优先级）
+## 下一步候选方向（按优先级，2026-05-04 更新）
 
-0. **⭐ A0. 跑服务商话术验证 micro-pilot**（**新最高优先级**，2026-05-03 加入）—— [`exp-cn-vendor-pitch-self-reference-wordtrace`](./BACKLOG.md)："湖南哪家 GEO 公司好" × 5 平台 × ≥ 2 账号 × ≥ 2 时段 × ≥ 5 次。零账号成本、与 doubao / qianwen / wenxin / yuanbao / kimi 五个平台 selector pilot 高度兼容；做完直接为 A 项主实验铺路；同时回写 [`case-studies/wordtrace-vendor-pitch-decon-2026-05.md`](./case-studies/wordtrace-vendor-pitch-decon-2026-05.md) 的"复测结果"段。
-1. **A. 跑第一个实验 pilot**（最高 ROI 仍然不变）—— 用户人工 + Claude 协助调 selector，产出第一份真实数据
-2. **B. 平台 changelog 系列起手** —— 写 [`docs-doubao-changelog`](./BACKLOG.md) 建立 changelog 卡片模式，作为后续各平台 changelog 范本（豆包 / DeepSeek / 文心 / 千问 / 元宝 / 百度 / 小红书）
-3. **C. 继续铺技术主题** —— [`tech-cn-channel-mix-strategy`](./BACKLOG.md)（接 GEO ROI 框架的 mix 视角）/ [`tech-cn-corporate-knowledge-geo`](./BACKLOG.md)（企业内部知识库 GEO 专题）/ [`tech-cn-anti-monopoly-and-geo-roadmap`](./BACKLOG.md)（接 platform-search-blockade 衍生）/ [`tech-cn-llm-crawler-ua-registry`](./BACKLOG.md)（接 llms.txt 卡衍生）
-4. **D. 工具评测占位** —— 国内 GEO 服务商（传声港 / 怪兽智能 / 传新社 / SheepGeo / Foglift）建 stub 卡片
-5. **E. push 到 GitHub + BACKLOG → issue 转换** —— 仓库迁移到协作模式
-6. **F. 设计第三个实验** —— 例如 [`exp-cn-ymyl-cross-platform-citation`](./BACKLOG.md)（验证 E-E-A-T 卡片元假说 C：YMYL 类全平台趋同）
+仓库已从"概念叠卡"阶段进入"实证瓶颈"阶段——审计后认知重建已完成，**主要瓶颈是用户人工 pilot**。
+
+### 用户人工依赖项（瓶颈，最高优先级）
+
+1. **⭐⭐⭐ A0. 服务商话术验证 micro-pilot** —— [`exp-cn-vendor-pitch-self-reference-wordtrace`](./BACKLOG.md)："湖南哪家 GEO 公司好" × 5 平台 × ≥ 2 账号 × ≥ 2 时段 × ≥ 5 次。零账号成本、与 5 平台 selector pilot 高度兼容；做完直接为 A 项主实验铺路；同时回写探词案例卡的"复测结果"段
+2. **⭐⭐⭐ A. 第一个实验 pilot** —— 仓库**最高优先级实证目标**；用户人工 + Claude 协助调 selector，产出第一份真实数据；selector 验证后端到端 pilot run（10 次）+ 主实验 320 次采集
+
+### Claude 可独立推进项
+
+3. **⭐⭐ E1 第二阶段：迈富时年报反工程深挖**（剩余 6-13 小时）—— 完整年报正文阅读 + 关联方交易 + 投资者关系记录 + 季报对照 + 销售物料 vs 财报披露的术语口径对照
+4. **⭐⭐ B. 平台 changelog 系列起手** —— [`docs-doubao-changelog`](./BACKLOG.md) 建立 changelog 卡片模式，作为后续各平台 changelog 范本
+5. **⭐⭐ Tier 2 第二样本：PureblueAI 清蓝**（前豆包平台市场负责人 + 蓝色光标系投资）—— 与智推时代形成 Tier 2 内部对照
+6. **⭐ D. 工具评测占位** —— 国内 GEO 服务商（传声港 / 怪兽智能 / 传新社 / SheepGeo / Foglift）建 stub 卡片，按客观可观测谓词分层归类
+7. **⭐ 平台 4 形态变现监测：第一份季度报告** —— 窗口 2026-08
+
+### 大型基础设施项
+
+8. **E. push 到 GitHub + BACKLOG → issue 转换** —— 仓库迁移到协作模式
+9. **F. 设计第三个实验** —— 例如 [`exp-cn-ymyl-cross-platform-citation`](./BACKLOG.md)（验证 E-E-A-T 卡片元假说 C：YMYL 类全平台趋同）
 
 ## 关键约束 / 不要破坏的设计决定
 
@@ -217,9 +250,9 @@
 
 ## 文件总数
 
-84 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +13：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要 + 供给侧首张技术卡 + DS 子展开卡反 GEO 监测 + 博客系列首发 6 篇 + 索引 README；**2026-05-04 +5**：元假说审计报告 + GEO 行业分层卡 + 迈富时港股年报反工程案例卡 + 智推时代 Tier 2 腰部样本卡 + 4 形态平台变现监测实验）
+85 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +13：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要 + 供给侧首张技术卡 + DS 子展开卡反 GEO 监测 + 博客系列首发 6 篇 + 索引 README；**2026-05-04 +6**：元假说审计报告 + GEO 行业分层卡 + 迈富时港股年报反工程案例卡 + 智推时代 Tier 2 腰部样本卡 + 4 形态平台变现监测实验 + 会话总结）
 
 ```
 $ find . -type f \( -name "*.md" -o -name "*.py" -o -name "*.yaml" -o -name "*.txt" \) | grep -v __pycache__ | wc -l
-84
+85
 ```
