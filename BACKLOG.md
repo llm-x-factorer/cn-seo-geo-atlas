@@ -244,7 +244,11 @@
 
 > 来源：[`audits/2026-05-04_meta-hypothesis-audit.md`](./audits/2026-05-04_meta-hypothesis-audit.md) 第四节"新发现的研究空白"。
 
-- [ ] **`tech-cn-mofusoft-tgeo-reverse-engineering`** —— ⭐⭐⭐ 迈富时（02556.HK）T-GEO™ 五层认知架构反工程。基于年报 + 公告 + 招股书 + 客户案例公开物料，反推 T-GEO 实际能力边界 + Tforce 千亿大模型在 GEO 业务中的实际作用。仓库**唯一可获 A 级公开数据源**——港股年报披露 GEO 业务数据。预算 ¥0（公开物料）+ 8-15 小时。补足 DS 商业模式分类的 h 层"上市营销云横向扩展"。
+- [x] **`tech-cn-mofusoft-tgeo-reverse-engineering`** —— ⭐⭐⭐ 迈富时（02556.HK）港股年报反工程 **第一阶段（2026-05-04）✅**：[`case-studies/mofusoft-tier1-reverse-engineering-2026-05.md`](./case-studies/mofusoft-tier1-reverse-engineering-2026-05.md)（约 2 小时人力，6 个 A 级信源，281 行）。**关键修正**：审计 brief "T-GEO™ 五层认知架构 / 21 万企业客户 / 千亿参数 / 7 年 IDC 第一" 多项数据需修正——实际是"AI-Agentforce 智能体中台 + 四层架构 / 2.7 万企业客户 / 参数量未公开 / 6 年 AI SaaS 第一"。修正不影响 Tier 1 整体判断。剩余第二阶段（6-13 小时）见下条。
+- [ ] **`tech-cn-mofusoft-tgeo-reverse-engineering-phase2`** —— ⭐⭐ E1 第二阶段（剩余 6-13 小时人力 / ¥0 现金）：完整年报正文阅读 + 关联方交易公告 + 投资者关系活动记录 + Q1-Q3 季报对照 + 与销售物料的术语口径对照。建议下一阶段在仓库实地 pilot 实验后启动。
+- [ ] **`tech-cn-mofusoft-anti-geo-monitoring-product-watch`** —— 监测迈富时是否上线反 GEO 监测产品（连接 [`anti-geo-monitoring-cn.md`](./techniques/anti-geo-monitoring-cn.md)）。
+- [ ] **`exp-cn-mofusoft-acquisition-tracker`** —— 跟踪迈富时 2025-2026 并购公告（验证 [`geo-industry-stratification-cn.md`](./techniques/geo-industry-stratification-cn.md) 元假说 C "尾部玩家被并购"）。计划 2025 内完成 ≥ 2 宗。
+- [ ] **`tech-cn-tier1-vendor-jargon-reconciliation`** —— 头部公司销售物料 vs 财报披露的术语对照（"21 万 vs 2.7 万" / "千亿参数 vs 未公开" / "T-GEO 五层 vs AI-Agentforce 四层" 等偏差源头分析）。是仓库识别"反尾部 SEO 软文型话术 vs 头部销售物料"差异的方法学卡。
 - [ ] **`tech-cn-percent-national-standard-path`** —— ⭐⭐ 百分点科技参与 40 项国标的具体路径调研。识别百分点参与的 GEO 相关国标（信通院《GEO 服务可信基本要求》是否包括）+ CMMI 5 / ISO20000 在 GEO 服务可信认证中的位置 + 党校案例库具体内容。验证 DS 元假说 D（标准协议层最高 ROI 位置）的具体推动方。
 - [ ] **`tech-cn-zhitui-customer-portrait-deep-dive`** —— ⭐⭐ 智推时代客户画像深挖（三七互娱 / 作业帮 / 小鹏 / 理想 + 入选艾瑞 2026 GEO 行业研究报告 + 进天津商业大学新工科课程）。验证 D0 元假说 C 修订方向——头部 / 腰部 GEO 公司宽客户画像是大客户密度的反映而非销售勉强匹配。
 - [ ] **`tech-cn-geo-industry-cr5-tracker`** —— 行业 CR5 集中度纵向跟踪（艾瑞 2026 Q1 已达 62.3%）。预期 2-3 年内并购窗口打开——头部上市公司（迈富时 / 蓝色光标系 / 三七互娱系）可能横向并购腰部创业 GEO 公司。
