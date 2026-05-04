@@ -78,6 +78,7 @@
 - [`audits/2026-05-04_meta-hypothesis-audit.md`](./audits/2026-05-04_meta-hypothesis-audit.md) —— **仓库第一份反向审计报告**：基于 7 个反转事实（迈富时 02556.HK 港股上市 / PureblueAI 蓝色光标投资 / 智推时代 A 股投资 / 百分点参与 40 项国标 / 央企 137 万级招标 / 信通院起草标准 + CR5=62.3% / 平台变现非凤巢式）对 86 条元假说做系统性反向审计。判决分布 ✓ 28 / ◐ 17 / ✗ 9 / ? 32（30.2% 严格性合格）。识别 4 个隐含前提中 2 证伪（"草莽期"+"创业 SaaS 为主"）+ 1 部分证伪（"广告位最大单一风险"形态错——实际 4 形态：订阅 / 电商佣金 / 监测后台 / API）+ 1 部分证伪（"客户付费弱仅窄场景"——遗漏防御侧）。
 - 已落地修订标注：[`techniques/geo-business-model-taxonomy-cn.md`](./techniques/geo-business-model-taxonomy-cn.md)（A ✗ / B ◐ / F ◐ / C/D 强化 ✓✓ / E ✓）+ [`techniques/geo-demand-side-fitness-cn.md`](./techniques/geo-demand-side-fitness-cn.md)（B ◐ / C ✗ / D ◐）+ [`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md) 4.1 强假说集标注 2 条 🔄 已降级 + [`case-studies/wordtrace-vendor-pitch-decon-2026-05.md`](./case-studies/wordtrace-vendor-pitch-decon-2026-05.md) 顶部加 7 条反转事实补丁。**所有原文保留作认知演化痕迹**——P1 必改 8 项的正式重写在后续集中执行。
 - **审计核心结论**：底座没崩，盖子歪了。D1-D8 信号侧 68 条假说在反转事实射程外，整体世界观成立；D0 + DS 18 条假说严重低估行业成熟度，被强化的 4 个判断（反 GEO 监测 / 标准协议层 / YMYL 监管驱动 / ROI 框架）是审计后剩下最坚固的部分。
+- **DS 升级（2026-05-04 当天补完）**：[`techniques/geo-business-model-taxonomy-cn.md`](./techniques/geo-business-model-taxonomy-cn.md) 七层 → 八层结构升级——新增 h 层"横向扩展"（上市营销云加 GEO 模块 + 数据 / 政务公司加 GEO 模块 + 平台内部人创业 + 上市投资），承载迈富时 02556.HK / 百分点 / 蓝色光标系等画像。第 II 节标题 + 2.1 / 2.2 / 2.3 三表加 h 行 + 后续段落同步。h 层不独立成新元假说——分散落入 B / F 修订段。dimension-map 第 II 节 / III 节 / 8.5 节同步更新。
 
 ### 7. 项目级文档 ✅
 - [`README.md`](./README.md) — 已更新到 2026-05-02 现状（14+1 张技术卡 / 8 维度 / 68 元假说 + dimension-map 入口指引 + 仓库特色"怀疑锚点 + 元假说 + 反话术对照"段）
