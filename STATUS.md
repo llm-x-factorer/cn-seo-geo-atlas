@@ -82,6 +82,13 @@
 - **D0 升级（2026-05-04 当天补完）**：[`techniques/geo-demand-side-fitness-cn.md`](./techniques/geo-demand-side-fitness-cn.md) 元假说 B 从"4 类窄场景"升级为"5 类窄场景，分两条决策路径"。**这是 D0 卡的核心结构升级——把 GEO 需求模型从单维度"用户决策路径"扩为双维度"用户路径 + 品牌方采购动机"**。II 节 2.2 表加"品牌防御类需求" 5 行补表 + 结论段升级 + 2.3 表加"品牌防御维度的行业差异" 5 行补表 + 元假说 B 段加正式升级版扩展 + V 节话术对照新增 4 条。dimension-map 第 II 节 D0 行同步更新。
 - **DS 元假说 A 升级（2026-05-04 当天补完）**：[`techniques/geo-business-model-taxonomy-cn.md`](./techniques/geo-business-model-taxonomy-cn.md) 元假说 A 从"广告位单一风险"升级为"4 形态平台变现冲击"——订阅制（消费侧绕过）/ 电商佣金（供给侧绕过）/ 自建品牌方监测后台 / API 收费（B2B 端绕过）。每形态独立给出机制 / 对 c/d 层冲击 / 当前已有信号 / 可证伪性 + 4 形态叠加效应表 + c/d 层剩余价值（非电商可路由场景 + 跨平台监测 + 垂直陪跑）+ 强反话术从 2 条扩为 6 条。BACKLOG 中 [`exp-cn-llm-platform-ad-slot-monitor`](./BACKLOG.md) 标 🔄 升级，新增 [`exp-cn-llm-platform-4-monetization-form-monitor`](./BACKLOG.md) 替代项。**这是 DS 卡的核心结构升级——把平台风险模型从单形态扩为 4 形态**。
 
+### 7.10 DS 维度第 2 张子卡：GEO 行业分层（新增 2026-05-04）✅
+
+- [`techniques/geo-industry-stratification-cn.md`](./techniques/geo-industry-stratification-cn.md) —— **DS 维度第 2 张子卡 / 仓库第 18 张技术卡**。承载审计报告（[`audits/2026-05-04_meta-hypothesis-audit.md`](./audits/2026-05-04_meta-hypothesis-audit.md)）核心结论"**分层成熟期**"——审计识别原前提"草莽期"被证伪后必须有正面卡片承载新画像。322 行，11 段标准结构。
+- 核心内容：客观可观测谓词（上市 / 国标 / 大客户密度 / 千亿模型 / 上市公司投资 / 行业研究入选 / 高校课程纳入）拆三层 + 三层 × 6 维度对照（代表玩家 / 客户画像 / 决策人 / 客户价值 / 模式合理性 / 平台风险）+ CR5=62.3% 含义解读（成熟行业典型水位） + 5 条元假说（A 强反话术 ⭐⭐⭐ "CR5=62.3% 已是分层成熟期" / B 强假说"三层客户保有率数量级差异" / C 强假说"尾部 12-24 个月被并购或出清" / D "反话术基调精确化为反尾部 SEO 软文型话术" / E "分层判定可观测谓词成为仓库硬基线"）+ 3 个实验设计（E1 ⭐⭐⭐ 迈富时港股年报反工程，¥0 成本，仓库唯一 A 级公开数据源 / E2 ⭐⭐ 腰部纵向跟踪 / E3 ⭐ 尾部存活率跟踪）+ 7 条话术分层重判 + 衍生 BACKLOG 8 条。
+- 仓库结构演进：17 张 → **18 张技术卡**，元假说总数 86 → **91**（+5）。dimension-map 第 II 节 DS 行 + 强假说集 4.1 + 变更记录同步更新。
+- **这是审计后仓库结构的最重要补全**——把"分层成熟期"从修订标注转为正面卡片，形成与 [`anti-geo-monitoring-cn.md`](./techniques/anti-geo-monitoring-cn.md) 并列的 DS 维度第 2 张子卡。
+
 ### 7. 项目级文档 ✅
 - [`README.md`](./README.md) — 已更新到 2026-05-02 现状（14+1 张技术卡 / 8 维度 / 68 元假说 + dimension-map 入口指引 + 仓库特色"怀疑锚点 + 元假说 + 反话术对照"段）
 - [`CLAUDE.md`](./CLAUDE.md) — **项目级 Claude Code 指引**（新建 2026-05-02）：项目定位 + 关键约束 + 写作风格 + 技术主题卡标准结构 + 不应建新卡的情况 + 用户偏好 + 三大卡住点速查
@@ -177,9 +184,9 @@
 
 ## 文件总数
 
-80 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +13：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要 + 供给侧首张技术卡 + DS 子展开卡反 GEO 监测 + 博客系列首发 6 篇 + 索引 README；**2026-05-04 +1**：元假说审计报告）
+81 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +13：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要 + 供给侧首张技术卡 + DS 子展开卡反 GEO 监测 + 博客系列首发 6 篇 + 索引 README；**2026-05-04 +2**：元假说审计报告 + GEO 行业分层卡）
 
 ```
 $ find . -type f \( -name "*.md" -o -name "*.py" -o -name "*.yaml" -o -name "*.txt" \) | grep -v __pycache__ | wc -l
-80
+81
 ```
