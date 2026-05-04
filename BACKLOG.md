@@ -250,7 +250,12 @@
 - [ ] **`exp-cn-mofusoft-acquisition-tracker`** —— 跟踪迈富时 2025-2026 并购公告（验证 [`geo-industry-stratification-cn.md`](./techniques/geo-industry-stratification-cn.md) 元假说 C "尾部玩家被并购"）。计划 2025 内完成 ≥ 2 宗。
 - [ ] **`tech-cn-tier1-vendor-jargon-reconciliation`** —— 头部公司销售物料 vs 财报披露的术语对照（"21 万 vs 2.7 万" / "千亿参数 vs 未公开" / "T-GEO 五层 vs AI-Agentforce 四层" 等偏差源头分析）。是仓库识别"反尾部 SEO 软文型话术 vs 头部销售物料"差异的方法学卡。
 - [ ] **`tech-cn-percent-national-standard-path`** —— ⭐⭐ 百分点科技参与 40 项国标的具体路径调研。识别百分点参与的 GEO 相关国标（信通院《GEO 服务可信基本要求》是否包括）+ CMMI 5 / ISO20000 在 GEO 服务可信认证中的位置 + 党校案例库具体内容。验证 DS 元假说 D（标准协议层最高 ROI 位置）的具体推动方。
-- [ ] **`tech-cn-zhitui-customer-portrait-deep-dive`** —— ⭐⭐ 智推时代客户画像深挖（三七互娱 / 作业帮 / 小鹏 / 理想 + 入选艾瑞 2026 GEO 行业研究报告 + 进天津商业大学新工科课程）。验证 D0 元假说 C 修订方向——头部 / 腰部 GEO 公司宽客户画像是大客户密度的反映而非销售勉强匹配。
+- [x] **`tech-cn-zhitui-customer-portrait-deep-dive`** —— ⭐⭐ 智推时代客户画像深挖 ✅ **2026-05-04 完成**：[`case-studies/zhitui-tier2-2026-05.md`](./case-studies/zhitui-tier2-2026-05.md)（约 2 小时人力 / 7 个信源 / 4 A 级 + 3 B 级 / 278 行）。**关键发现**：（1）4/4 Tier 2 谓词全部满足；（2）F7 反转事实直接出处（创始人陈缪喆原话）；（3）**Tier 2 画像 = A 级 + B 级二元混合**——仓库基调精确化为"反 B 级 SEO 软文层，不反 A 级结构性背书层"；（4）完整三层对照组成立。
+- [ ] **`tech-cn-zhitui-acquisition-history-tracker`** —— 跟踪智推时代 2026 后续融资 / 并购公告（验证分层卡元假说 C "尾部玩家被并购或出清"是否同样适用于腰部公司向头部跃迁的并购路径）。
+- [ ] **`tech-cn-tier2-vendor-jargon-pattern-library`** —— ⭐⭐ 多家 Tier 2 公司"A 级 + B 级二元混合"画像的方法学专题（智推时代 + PureblueAI + 飞柚 ≥ 3 家积累后启动）。识别"上市公司投资 + SEO 软文" 这种 Tier 2 公司画像的共同特征。
+- [ ] **`exp-cn-zhitui-customer-verification`** —— 智推时代 9 家公开客户的实际签约 / 服务深度独立核实（联系客户方公开物料）。
+- [ ] **`tech-cn-geno-open-source-status-check`** —— GENO 系统是否真的开源（B 级源称"国内首个开源 GEO 服务系统"）+ 开源协议 + 实际可用度。
+- [ ] **`tech-cn-irrational-claims-table-tier2`** —— Tier 2 公司 SEO 软文中的"不可证伪声称"清单（"国内最早"、"99.7% 准确度"、"95% 口碑推荐"等）的方法学卡。是仓库识别 Tier 2 / Tier 3 公司画像差异的辅助工具。
 - [ ] **`tech-cn-geo-industry-cr5-tracker`** —— 行业 CR5 集中度纵向跟踪（艾瑞 2026 Q1 已达 62.3%）。预期 2-3 年内并购窗口打开——头部上市公司（迈富时 / 蓝色光标系 / 三七互娱系）可能横向并购腰部创业 GEO 公司。
 - [ ] **`tech-cn-platform-insider-startup-pattern`** —— "平台内部人 + 上市投资"创业模式专题（PureblueAI 清蓝 = 前豆包市场负责人 + 蓝色光标领投是新现象）。仓库假说未覆盖此类组合。
 
