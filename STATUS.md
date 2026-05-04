@@ -79,6 +79,7 @@
 - 已落地修订标注：[`techniques/geo-business-model-taxonomy-cn.md`](./techniques/geo-business-model-taxonomy-cn.md)（A ✗ / B ◐ / F ◐ / C/D 强化 ✓✓ / E ✓）+ [`techniques/geo-demand-side-fitness-cn.md`](./techniques/geo-demand-side-fitness-cn.md)（B ◐ / C ✗ / D ◐）+ [`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md) 4.1 强假说集标注 2 条 🔄 已降级 + [`case-studies/wordtrace-vendor-pitch-decon-2026-05.md`](./case-studies/wordtrace-vendor-pitch-decon-2026-05.md) 顶部加 7 条反转事实补丁。**所有原文保留作认知演化痕迹**——P1 必改 8 项的正式重写在后续集中执行。
 - **审计核心结论**：底座没崩，盖子歪了。D1-D8 信号侧 68 条假说在反转事实射程外，整体世界观成立；D0 + DS 18 条假说严重低估行业成熟度，被强化的 4 个判断（反 GEO 监测 / 标准协议层 / YMYL 监管驱动 / ROI 框架）是审计后剩下最坚固的部分。
 - **DS 升级（2026-05-04 当天补完）**：[`techniques/geo-business-model-taxonomy-cn.md`](./techniques/geo-business-model-taxonomy-cn.md) 七层 → 八层结构升级——新增 h 层"横向扩展"（上市营销云加 GEO 模块 + 数据 / 政务公司加 GEO 模块 + 平台内部人创业 + 上市投资），承载迈富时 02556.HK / 百分点 / 蓝色光标系等画像。第 II 节标题 + 2.1 / 2.2 / 2.3 三表加 h 行 + 后续段落同步。h 层不独立成新元假说——分散落入 B / F 修订段。dimension-map 第 II 节 / III 节 / 8.5 节同步更新。
+- **D0 升级（2026-05-04 当天补完）**：[`techniques/geo-demand-side-fitness-cn.md`](./techniques/geo-demand-side-fitness-cn.md) 元假说 B 从"4 类窄场景"升级为"5 类窄场景，分两条决策路径"。**这是 D0 卡的核心结构升级——把 GEO 需求模型从单维度"用户决策路径"扩为双维度"用户路径 + 品牌方采购动机"**。II 节 2.2 表加"品牌防御类需求" 5 行补表 + 结论段升级 + 2.3 表加"品牌防御维度的行业差异" 5 行补表 + 元假说 B 段加正式升级版扩展 + V 节话术对照新增 4 条。dimension-map 第 II 节 D0 行同步更新。
 
 ### 7. 项目级文档 ✅
 - [`README.md`](./README.md) — 已更新到 2026-05-02 现状（14+1 张技术卡 / 8 维度 / 68 元假说 + dimension-map 入口指引 + 仓库特色"怀疑锚点 + 元假说 + 反话术对照"段）
