@@ -167,6 +167,15 @@
 
 **预注册阈值已编码进 `analyze.py`**：`H1_DIFF_THRESHOLD_PP = 20` / `H1_WEAK_DIFF_PP = 5`，避免事后调整。
 
+### 8. 投毒攻击研究草稿 + E\* 沙盒实验工具栈（新增 2026-05-30）✅
+
+- [`audits/2026-05-30_poisoning-research.md`](./audits/2026-05-30_poisoning-research.md) —— **投毒攻击在中文 GEO 的威胁建模研究草稿**（防御导向）。源自 6 路并行调研 + 1 路对抗性核验。8 段正文 + F/P/N 标注 + "校正说明"（落盘前修正核验抓到的 8 处引用/事实错误：CPA-RAG / POISONCRAFT 的 arXiv ID 张冠李戴、C-SEO Bench 模型数、Harvard 数字等）+ §9 对抗性核验留痕（13 条引用裁决 supported 9 / partial 4 + 7 个 steelman 缺口）。核心判决：**投毒在中文 GEO 是"已确证可发生（3·15）但效果上限存疑"，层 2 RAG 检索期是唯一现实攻击面，生效依赖 data void，监管窗口收窄**。暂存草稿不升技术卡（审计已警告勿"概念叠卡"），待 E\* 产出第一手数据再定。
+- [`experiments/exp-cn-rag-poisoning-datavoid-sandbox.md`](./experiments/exp-cn-rag-poisoning-datavoid-sandbox.md) —— **E\* 实验设计**：判决问题"data void 是不是中文 RAG 投毒成功的决定变量"。预注册 H1（虚构 vs 成熟 ASR 差 ≥30pp）/ H2（防御后降 ≥20pp）/ H3（自然文本绕困惑度 ≥30pp），阈值锁死在 analyze.py。伦理边界：**只在自建沙盒，零线上注入**。
+- [`tools/exp-cn-rag-poisoning-datavoid-sandbox/`](./tools/exp-cn-rag-poisoning-datavoid-sandbox/) —— **13 文件可跑工具栈**：corpus_io / build_corpus / poison（沙盒投毒器，故意不实现 GASLITE/HotFlip）/ retriever（bge-zh 或 hash + KE/白名单/困惑度过滤三防御）/ rag_runner（mock/openai/hf）/ collect / score / analyze + README + ETHICS + config.example + queries（12 虚构 + 12 成熟）。
+- **smoke test 已端到端验证通过**（python3.13）：build→poison→collect→score→analyze 全链路跑通，产出含 NOT-EVIDENCE 横幅的 results.md（H1 虚构 75% vs 成熟 0% 支持 / 两阶段诊断检索失败 vs 生成失败）。**smoke 逮到并修掉 3 个真 bug**：YAML 把 `off/on` 解析成布尔、`np.bool_` JSON 序列化崩、`clean_true` 跨 query 串源。
+- **意义**：这是**仓库第一个不依赖用户账号、纯本地可跑的实验**——只需配本地 embedding（bge-zh）+ 本地/API LLM 即可产出第一手投毒有效性数据，**与卡了很久的"豆包 vs DeepSeek selector pilot"不冲突、可并行**。
+- 仓库结构：18 张技术卡 / 91 元假说 / 3 case-study / **+1 audit 草稿 + 1 实验设计 + 1 工具栈（smoke 验证）**。
+
 ## 当前进行中 / 即将开始
 
 **2026-05-03 文档同步**：项目级 [`CLAUDE.md`](./CLAUDE.md) 新建 + [`README.md`](./README.md) 改写到 14+1 卡现状 + [`CONTRIBUTING.md`](./CONTRIBUTING.md) 加技术主题卡的 11 段标准结构和"不应建新卡"约束 + auto memory 系统建立 3 条 feedback / project memory + 仓库首次 git init + commit。
@@ -250,9 +259,9 @@
 
 ## 文件总数
 
-85 个（含 11 个 Python/YAML 工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +13：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要 + 供给侧首张技术卡 + DS 子展开卡反 GEO 监测 + 博客系列首发 6 篇 + 索引 README；**2026-05-04 +6**：元假说审计报告 + GEO 行业分层卡 + 迈富时港股年报反工程案例卡 + 智推时代 Tier 2 腰部样本卡 + 4 形态平台变现监测实验 + 会话总结）
+100 个（含工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +13：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要 + 供给侧首张技术卡 + DS 子展开卡反 GEO 监测 + 博客系列首发 6 篇 + 索引 README；**2026-05-04 +6**：元假说审计报告 + GEO 行业分层卡 + 迈富时港股年报反工程案例卡 + 智推时代 Tier 2 腰部样本卡 + 4 形态平台变现监测实验 + 会话总结；**2026-05-30 +14**：投毒攻击研究草稿 [`audits/2026-05-30_poisoning-research.md`](./audits/2026-05-30_poisoning-research.md) + E\* 实验设计 [`experiments/exp-cn-rag-poisoning-datavoid-sandbox.md`](./experiments/exp-cn-rag-poisoning-datavoid-sandbox.md) + 13 文件沙盒工具栈 [`tools/exp-cn-rag-poisoning-datavoid-sandbox/`](./tools/exp-cn-rag-poisoning-datavoid-sandbox/)，smoke test 已端到端验证）
 
 ```
-$ find . -type f \( -name "*.md" -o -name "*.py" -o -name "*.yaml" -o -name "*.txt" \) | grep -v __pycache__ | wc -l
-85
+$ find . -type f \( -name "*.md" -o -name "*.py" -o -name "*.yaml" -o -name "*.txt" \) | grep -v __pycache__ | grep -v '/\.claude/' | wc -l
+100
 ```

@@ -1,0 +1,14 @@
+# --- 核心（smoke test 即够，全本地）---
+pyyaml>=6.0
+numpy>=1.24
+pandas>=2.0
+scipy>=1.11
+
+# --- 可选：真实主实验后端 ---
+# bge-small-zh 中文 embedding（retriever.backend=bge）
+sentence-transformers>=2.6
+# 困惑度过滤的真实 LM（defense.perplexity_backend=hf）+ 本地生成（llm.backend=hf）
+transformers>=4.40
+torch>=2.2
+# openai 兼容客户端（llm.backend=openai，指向本地 Ollama 或 API）
+openai>=1.30

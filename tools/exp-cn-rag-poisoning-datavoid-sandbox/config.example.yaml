@@ -1,0 +1,50 @@
+# exp-cn-rag-poisoning-datavoid-sandbox 配置
+# 复制为 config.yaml 后修改。预注册判定阈值不在这里——锁死在 analyze.py。
+
+experiment_id: exp-cn-rag-poisoning-datavoid-sandbox-v1
+
+data_dir: ./data
+corpus_path: ./data/corpus.jsonl       # build_corpus.py 产出（clean 基底）
+poison_path: ./data/poison.jsonl       # poison.py 产出（仅本地投毒文档）
+queries_file: ./queries.yaml
+
+# ---- clean 基底知识库构建 ----
+corpus:
+  docs_per_mature_entity: 8            # 每个成熟实体的真实答案文档数
+  distractor_docs: 3000                # 主题无关干扰文档（starter；主实验建议 ≥ 100000）
+  doc_min_chars: 60
+  doc_max_chars: 200
+
+# ---- 设计矩阵（预注册结构）----
+poison_doses: [1, 5, 0.03]             # 整数=绝对篇数；浮点=占库比例（0.03=3%）
+defense_states: ["off", "on"]          # 必须加引号：YAML 会把裸 off/on 解析成布尔
+repetitions: 5
+poison_styles: ["natural", "noise"]    # 两风格在每 session 内分别注入并记录（H3）
+
+# ---- 检索 ----
+retriever:
+  backend: auto                        # auto | bge | hash（auto: 有 sentence-transformers 用 bge，否则 hash）
+  bge_model: BAAI/bge-small-zh-v1.5
+  top_k_off: 5                         # 防御关：KE 检索文档数
+  top_k_on: 20                         # 防御开：KE 提高（H2 的一部分）
+
+# ---- 防御（defense_state=on 时启用）----
+defense:
+  source_whitelist_enabled: true
+  whitelist_source_types: [gov-edu, central-media, encyclopedia]  # 仅这些来源进上下文
+  perplexity_filter_enabled: true
+  perplexity_backend: auto             # auto | hf | heuristic
+  perplexity_hf_model: uer/gpt2-chinese-cluecorpussmall
+  perplexity_zscore_drop: 2.0          # 候选文档 PPL z-score 超此值判异常并丢弃
+
+# ---- 生成 ----
+llm:
+  backend: mock                        # mock | openai | hf
+  openai_base_url: http://localhost:11434/v1   # 例：本地 Ollama
+  openai_model: qwen2.5:0.5b
+  openai_api_key_env: SANDBOX_LLM_API_KEY       # 从该环境变量读 key（本地 Ollama 可随意）
+  hf_model: Qwen/Qwen2.5-0.5B-Instruct
+  max_new_tokens: 256
+  temperature: 0.0
+
+seed: 20260530
