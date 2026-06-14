@@ -1,6 +1,8 @@
 # 学术论文索引
 
-按"对中文场景的可借鉴度"和"反 GEO 营销话术的硬度"挑选，不追求全。完整学术列表见 [DavidHuji/Awesome-GEO](https://github.com/DavidHuji/Awesome-GEO) 和 [amplifying-ai 的 papers-and-studies](https://github.com/amplifying-ai/awesome-generative-engine-optimization/tree/main/papers-and-studies)。
+按"对中文场景的可借鉴度"和"反 GEO 营销话术的硬度"挑选，不追求全。本文是**带注释的研究底稿**（每篇含作者 / 年份 / 核心结论 / 中文场景借鉴度判断）。
+
+> **与姊妹库的分工（避免两边各改各的漂移）**：面向公众的论文速览表见 [awesome-geo-cn 学术论文区](https://github.com/LLM-X-Factorer/awesome-geo-cn#学术论文)（持续收录、表格速查、对外用）；本文只收"值得逐篇精读 + 反话术有用"的精选并加注释——两边重叠的奠基论文，**注释深度以本文为准，全量覆盖以 awesome-geo-cn 为准**。完整英文列表见 [DavidHuji/Awesome-GEO](https://github.com/DavidHuji/Awesome-GEO) 和 [amplifying-ai 的 papers-and-studies](https://github.com/amplifying-ai/awesome-generative-engine-optimization/tree/main/papers-and-studies)。
 
 ---
 
