@@ -11,7 +11,7 @@
 ## 本会话开始前必读
 
 1. [`STATUS.md`](./STATUS.md) —— 当前进度 + 三大卡住点 + 下一步候选方向
-2. [`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md) —— 18 张技术卡 × D0 + D1-D8 + DS 三轴图谱、卡间关系、强假说集、按服务商话术 / 主体类型反查
+2. [`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md) —— 19 张技术卡 × D0 + D1-D8 + DS 三轴图谱、卡间关系、强假说集、按服务商话术 / 主体类型反查
 3. [`audits/2026-05-04_meta-hypothesis-audit.md`](./audits/2026-05-04_meta-hypothesis-audit.md) —— 元假说审计：91 条假说基于 7 个反转事实判决 ✓ 28 / ◐ 17 / ✗ 9 / ? 32+5；4 个隐含前提中 2 证伪（"草莽期"+"创业 SaaS 为主"）+ 2 部分证伪。**仓库基调更新**：反**尾部 SEO 软文型话术**，不反国标参与方 / 上市公司 / 平台内部人创业等已有结构性背书的玩家
 4. [`techniques/geo-industry-stratification-cn.md`](./techniques/geo-industry-stratification-cn.md) —— GEO 行业头部 / 腰部 / 尾部三层结构（承载审计核心结论"分层成熟期"），按客观谓词判分层，避免基于宣传物料 / 单样本主观判断
 3. [`BACKLOG.md`](./BACKLOG.md) —— 待办池
@@ -67,10 +67,10 @@
 
 1. **第一个实验未跑过**：[`tools/exp-doubao-vs-deepseek-paired/`](./tools/exp-doubao-vs-deepseek-paired/) selector 标 `# TODO: pilot-verify`，等待人工 pilot
 2. **五大厂实验未启动**：依赖第一个实验跑通；需 3 个新 adapter（wenxin / qianwen / yuanbao）
-3. **大量元假说未实证**：18 张技术卡共 91 条元假说——2026-05-04 审计后 ✓ 28 / ◐ 17 / ✗ 9 / ? 32+5，但 ✓/◐/✗ 大多基于反转事实逻辑外推，pilot 实证仍是首要任务
+3. **大量元假说未实证**：19 张技术卡共 95 条元假说——2026-05-04 审计覆盖的 91 条 ✓ 28 / ◐ 17 / ✗ 9 / ? 32+5（市场全景卡新增 4 条待审计），但 ✓/◐/✗ 大多基于反转事实逻辑外推，pilot 实证仍是首要任务
 
 距离"产出第一个一手研究结论"还差 selector pilot → pilot run → 主实验执行 → score + analyze → 回写。**前 3 步只能由用户做（账号 + 网络环境）**。
 
-## 当前文件总数：100（持续增长中，每次新建卡片必须更新 [`STATUS.md`](./STATUS.md) 第 11 节文件总数）
+## 当前文件总数：101（持续增长中，每次新建卡片必须更新 [`STATUS.md`](./STATUS.md) 第 11 节文件总数）
 
 ## 看到这一行说明你已读完——现在去读 [`STATUS.md`](./STATUS.md) 和 [`techniques/dimension-map-cn.md`](./techniques/dimension-map-cn.md)。

@@ -259,9 +259,9 @@
 
 ## 文件总数
 
-100 个（含工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +13：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要 + 供给侧首张技术卡 + DS 子展开卡反 GEO 监测 + 博客系列首发 6 篇 + 索引 README；**2026-05-04 +6**：元假说审计报告 + GEO 行业分层卡 + 迈富时港股年报反工程案例卡 + 智推时代 Tier 2 腰部样本卡 + 4 形态平台变现监测实验 + 会话总结；**2026-05-30 +14**：投毒攻击研究草稿 [`audits/2026-05-30_poisoning-research.md`](./audits/2026-05-30_poisoning-research.md) + E\* 实验设计 [`experiments/exp-cn-rag-poisoning-datavoid-sandbox.md`](./experiments/exp-cn-rag-poisoning-datavoid-sandbox.md) + 13 文件沙盒工具栈 [`tools/exp-cn-rag-poisoning-datavoid-sandbox/`](./tools/exp-cn-rag-poisoning-datavoid-sandbox/)，smoke test 已端到端验证）
+101 个（含工具文件 + 1 个 .gitignore + 1 个项目级 [`CLAUDE.md`](./CLAUDE.md)；2026-05-03 累计 +13：服务商话术拆解 #1 + 厂商 PDF 转录 + 需求侧首张技术卡 + 会议纪要 + 供给侧首张技术卡 + DS 子展开卡反 GEO 监测 + 博客系列首发 6 篇 + 索引 README；**2026-05-04 +6**：元假说审计报告 + GEO 行业分层卡 + 迈富时港股年报反工程案例卡 + 智推时代 Tier 2 腰部样本卡 + 4 形态平台变现监测实验 + 会话总结；**2026-05-30 +14**：投毒攻击研究草稿 [`audits/2026-05-30_poisoning-research.md`](./audits/2026-05-30_poisoning-research.md) + E\* 实验设计 [`experiments/exp-cn-rag-poisoning-datavoid-sandbox.md`](./experiments/exp-cn-rag-poisoning-datavoid-sandbox.md) + 13 文件沙盒工具栈 [`tools/exp-cn-rag-poisoning-datavoid-sandbox/`](./tools/exp-cn-rag-poisoning-datavoid-sandbox/)，smoke test 已端到端验证；**2026-06-14 +1**：GEO 市场全景卡 [`techniques/geo-industry-market-landscape-cn.md`](./techniques/geo-industry-market-landscape-cn.md)——从 my-cognition 实地调研笔记迁入并脱敏，DS 子卡 #3 / 分层卡横向全景姊妹卡，仓库 18 → **19** 张技术卡、元假说 91 → **95**）
 
 ```
 $ find . -type f \( -name "*.md" -o -name "*.py" -o -name "*.yaml" -o -name "*.txt" \) | grep -v __pycache__ | grep -v '/\.claude/' | wc -l
-100
+101
 ```

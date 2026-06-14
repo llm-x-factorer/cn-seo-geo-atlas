@@ -1,5 +1,5 @@
 ---
-title: 技术主题卡片维度索引地图（18 张卡 × D0 + D1-D8 + DS 三轴）
+title: 技术主题卡片维度索引地图（19 张卡 × D0 + D1-D8 + DS 三轴）
 type: technique
 sources:
   - url: ./README.md
@@ -218,6 +218,7 @@ last_updated: 2026-05-03
 | [`geo-business-model-taxonomy-cn`](./geo-business-model-taxonomy-cn.md) | GEO 商业模式八层分类（主卡，2026-05-04 七层 → 八层） | 6 | A：⭐⭐⭐ LLM 平台一旦自建广告位，c/d 层中介模式整体被腰斩 🔄 已降级 |
 | [`anti-geo-monitoring-cn`](./anti-geo-monitoring-cn.md) | 反 GEO 监测：防御侧赛道（DS 元假说 C 具体展开 / 子卡 #1） | 7 | A：⭐⭐⭐ 反 GEO 监测真实需求规模与进攻型 GEO 相当甚至更大 |
 | [`geo-industry-stratification-cn`](./geo-industry-stratification-cn.md) | 中国 GEO 行业分层：头部 / 腰部 / 尾部（DS 子卡 #2，承载 2026-05-04 审计核心结论） | 5 | A：⭐⭐⭐ 行业 CR5=62.3% 已是分层成熟期，不是草莽期 |
+| [`geo-industry-market-landscape-cn`](./geo-industry-market-landscape-cn.md) | 中国 GEO 市场全景：17+ 玩家名单 / 集中度 / 央企招标 / 行业组织化（DS 子卡 #3，分层卡的横向全景姊妹卡） | 4 | A：⭐⭐⭐ CR5+14 家自律+央企招标=已寡头化成熟期，"刚起步人人有机会"是收割话术 |
 
 **统计（2026-05-04 升级后）**：
 
@@ -225,8 +226,8 @@ last_updated: 2026-05-03
 |---|--------|--------|
 | D0 需求侧 | 1 | 5 |
 | D1-D8 信号侧 | 14 | 68 |
-| DS 供给侧 | 1 主 + 2 子 = 3 | 6 + 7 + 5 = 18 |
-| **合计** | **18** | **91** |
+| DS 供给侧 | 1 主 + 3 子 = 4 | 6 + 7 + 5 + 4 = 22 |
+| **合计** | **19** | **95** |
 
 平均 5.06 条元假说 / 卡。**绝大多数仍为 concept 待实证**——审计后判决 ✓ 28 / ◐ 17 / ✗ 9 / ? 32（详见 [`audits/2026-05-04_meta-hypothesis-audit.md`](../audits/2026-05-04_meta-hypothesis-audit.md)）。
 
